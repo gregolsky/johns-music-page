@@ -1,0 +1,50 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.logo {
+    background-image: url('../images/logo-white.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+}
+
+.menu a {
+    font-size: 150%;
+    font-family: 'Niconne';
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    transition: 0.2s;
+}
+
+.menu .navbar-nav {
+    margin-top: 1em;
+}
+
+.menu .navbar-nav li a {
+    border-radius: 5px;   
+}
+
+.content {
+    margin: 1em auto;   
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.marketing-img {
+    background-size: contain;
+    width: 180px;
+    height: 160px;
+    border-radius: 5px;
+    margin: auto;
+    background-position: center center;
+    border: solid 1px #ccc;
+    background-repeat: no-repeat;
+    background-color: white;
+}
