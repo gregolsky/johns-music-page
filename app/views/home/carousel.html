@@ -1,0 +1,28 @@
+<div ng-controller="CarouselCtrl">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="carousel-logo-container" style="position: absolute; left: 50%;">
+                <div style="position: relative; left: -50%;">
+                    <div class='carousel-logo-container' style="width: 100%;">
+                        <div class="logo carousel-logo"></div>
+                    </div>
+                </div>
+            </div>
+
+            <carousel interval="interval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <div class="carousel-img {{ slide.image }}">
+                        <div class="carousel-caption">
+
+                            <h1>{{ slide.title }}</h1>
+                            <p>{{ slide.text }}</p>
+                        </div>
+                    </div>
+
+                </slide>
+            </carousel>
+
+        </div>
+    </div>
+</div>

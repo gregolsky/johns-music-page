@@ -23,11 +23,12 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
     <link rel="stylesheet" href="styles/carousel.css">
+    <link rel="stylesheet" href="styles/backgrounds.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
 </head>
 
-<body ng-app="johnsMusicPage">
+<body ng-app="johnsMusicPage" ng-controller="MainCtrl" >
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -36,69 +37,16 @@
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
-
-    <!-- Add your site or application content here -->
-
-    <div class="navbar-wrapper">
-        <div class="container">
-
-            <div class="menu navbar navbar-inverse navbar-static-top" role="navigation">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">
-                            <div class='logo'>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href="/#">
-                                    <i class="glyphicon glyphicon-star"></i>&nbsp;
-                                    Start</a>
-                            </li>
-                            <li>
-                                <a href="/#about">
-                                    <i class="glyphicon glyphicon-briefcase"></i>&nbsp;
-                                    Inni o nas</a>
-                            </li>                              
-                            <li>
-                                <a href="/#about">
-                                    <i class="glyphicon glyphicon-music"></i>&nbsp;
-                                    Edukacja muzyczna</a>
-                            </li>
-                            <li>
-                                <a href="/#about">
-                                    <i class="glyphicon glyphicon-glass"></i>&nbsp;
-                                    Oprawa artystyczna</a>
-                            </li>       
-                            <li>
-                                <a href="/#contact">
-                                    <i class="glyphicon glyphicon-earphone"></i>&nbsp;
-                                    Kontakt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
     
-    <div ng-include="'views/carousel.html'"></div>
+    <div class='bg'></div>
+
+    <div ng-include="'views/nav.html'"></div>
+    
+    <div ng-include="'views/home/carousel.html'"></div>
     
     <div class='content container'>
         <div ng-view></div>
     </div>
-
-    
-    
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="bower_components/angular/angular.js"></script>
@@ -106,6 +54,7 @@
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/carousel.js"></script>
     <!-- endbuild -->
 </body>
 
