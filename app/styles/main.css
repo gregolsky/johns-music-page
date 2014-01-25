@@ -11,8 +11,22 @@ body {
 
 .menu a {
     font-size: 150%;
-    font-family: 'Niconne';
+    font-family: 'Buenard';
     transition: 0.2s;
+}
+
+.menu .dropdown-menu {
+    background-color: #231e16;
+    color: white;
+}
+
+.menu .dropdown-menu a {
+    font-size: 135%;
+    color: #9f8a75;
+}
+
+.menu .dropdown-menu a:hover {
+    background-color: inherit;   
 }
 
 .menu a:hover {
@@ -75,9 +89,8 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     width: 300px;
-    height: 180px;
-    z-index: 1000;
-    
+    height: 190px;
+    z-index: 1;
 }
 
 .bg {
