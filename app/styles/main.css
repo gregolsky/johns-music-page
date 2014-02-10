@@ -9,6 +9,10 @@ body {
     height: 50px;
 }
 
+.menu {
+    opacity: 0.9;   
+}
+
 .menu a {
     font-size: 150%;
     font-family: 'Buenard';
@@ -47,7 +51,7 @@ body {
 
 .content {
     margin: 1em auto;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 1em 0 1em 0;
     border-radius: 5px;
 }
@@ -71,10 +75,10 @@ body {
 
 .carousel-img {
     margin: auto; 
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: center center;
     background-repeat: none;
-    height: 500px;
+    height: 600px;
 }
 
 .carousel-logo-container {
@@ -94,11 +98,8 @@ body {
 }
 
 .bg {
-    background-image: url('../images/classical-music-245590_1280.jpg');
-    background-size: cover;
-    opacity: 0.1;
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
+    background-image: url('../images/notes-bg-50.png');
+    background-size: contain;
+    background-repeat: repeat-y;
+    /*opacity: 0.1;*/
 }

@@ -15,14 +15,13 @@ angular.module('johnsMusicPage')
             
             $scope.slides = [
                 new Slide(
+                    'sax',
+                    'Wykręcone solówy!',
+                    'Wyśmienite bębnienie na odjechanych imprezach. Ostra jazda bez trzymanki.'),
+                new Slide(
                     'bells', 
                     'Wyedukujemy twoje dziecko na maxa!', 
-                    'Nie tylko na cymbałkach, ale też czarna muza. Noise-core, dzieci kwiaty i cyberpunk!'),
-                new Slide(
-                    'guitar',
-                    'Szał!',
-                    'Wyśmienite bębnienie na odjechanych imprezach. Ostra jazda bez trzymanki.')
-                
+                    'Nie tylko na cymbałkach, ale też czarna muza. Noise-core, dzieci kwiaty i cyberpunk!')                
             ];
         
 }]);
