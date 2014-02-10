@@ -1,5 +1,7 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: rgba(35, 30, 22, 1);
+    overflow-x: hidden;
 }
 
 .logo {
@@ -9,19 +11,14 @@ body {
     height: 50px;
 }
 
-.menu {
-    opacity: 0.9;   
+.menu.navbar-inverse, .menu.navbar-inverse ul.dropdown-menu {
+    background-color: rgba(35, 30, 22, 0.92);
 }
 
 .menu a {
     font-size: 150%;
     font-family: 'Buenard';
     transition: 0.2s;
-}
-
-.menu .dropdown-menu {
-    background-color: #231e16;
-    color: white;
 }
 
 .menu .dropdown-menu a {
@@ -50,9 +47,7 @@ body {
 }
 
 .content {
-    margin: 1em auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1em 0 1em 0;
+    background-color: #CFC0B1;
     border-radius: 5px;
 }
 
@@ -98,8 +93,12 @@ body {
 }
 
 .bg {
-    background-image: url('../images/notes-bg-50.png');
-    background-size: contain;
+    background-image: url('../images/notes2-bg.png');
+    background-size: cover;
     background-repeat: repeat-y;
     /*opacity: 0.1;*/
+}
+
+.top-sm-offset {
+   padding-top: 1em;
 }

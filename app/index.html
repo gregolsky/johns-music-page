@@ -25,27 +25,26 @@
     <!-- endbuild -->
 </head>
 
-<body class="bg" ng-app="johnsMusicPage" ng-controller="MainCtrl" >
+<body class="bg"  ng-app="johnsMusicPage" ng-controller="MainController" >
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="bower_components/es5-shim/es5-shim.js"></script>
-      <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-    
-    <div class=''></div>
-
     <div ng-include="'views/nav.html'"></div>
-    
+        
     <div ng-include="'views/home/carousel.html'"></div>
-    
+
     <div class='content container'>
         <div ng-view></div>
     </div>
 
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    
+    <!--[if lt IE 9]>
+      <script src="bower_components/es5-shim/es5-shim.js"></script>
+      <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+    
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>

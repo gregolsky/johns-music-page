@@ -1,7 +1,13 @@
 'use strict';
 
 angular.module('johnsMusicPage')
-    .controller('MainCtrl', ['$scope',
-        function ($scope) {
+    .controller('MainController', [
+                    '$scope',
+                    '$location',
+        function ($scope, $location) {
+
+            $scope.showCarousel = function () {
+                return $location.path() == '/';
+            }
 
   }]);

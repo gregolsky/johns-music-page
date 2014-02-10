@@ -1,4 +1,4 @@
-<div class="navbar-wrapper">
+<div ng-class="{ 'navbar-wrapper': showCarousel() }">
     <div class="container">
 
         <div class="menu navbar navbar-inverse navbar-static-top" role="navigation">
@@ -17,7 +17,7 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li>
+                        <li class="active" >
                             <a href="#/">
                                 <i class="glyphicon glyphicon-star"></i>&nbsp; O nas
                             </a>
@@ -28,26 +28,26 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Koncerty</a>
+                                    <a href="#/services/concert">Koncerty</a>
                                 </li>
                                 <li>
-                                    <a href="#">Imprezy firmowe</a>
+                                    <a href="#/services/business">Imprezy firmowe</a>
                                 </li>
                                 <li>
-                                    <a href="#">Imprezy okolicznościowe</a>
+                                    <a href="#/services/event">Imprezy okolicznościowe</a>
                                 </li>
                             </ul>
 
                         </li>
                         <li class="dropdown">
-                            <a href="#/education" class="dropdown-toggle" data-toggle="dropdown">
+                            <a  class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-book"></i>&nbsp; Edukacja</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="#">Zajęcia muzyczne</a>
+                                    <a href="#/education/classes" >Zajęcia muzyczne</a>
                                 </li>
                                 <li>
-                                    <a href="#">Warsztaty</a>
+                                    <a href="#/education/workshops">Warsztaty</a>
                                 </li>
                             </ul>
                         </li>

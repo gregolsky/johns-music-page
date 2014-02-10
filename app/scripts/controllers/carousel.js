@@ -11,8 +11,6 @@ angular.module('johnsMusicPage')
                 this.text = text;
             };
             
-            var p = 'images/';
-            
             $scope.slides = [
                 new Slide(
                     'sax',
