@@ -1,4 +1,4 @@
-// Generated on 2014-01-20 using generator-angular 0.5.1
+// Generated on 2013-12-15 using generator-angular 0.5.1
 'use strict';
 
 // # Globbing
@@ -210,7 +210,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>',
-          src: ['*.html', 'views/*.html'],
+          src: ['*.html', 'views/**/*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -226,9 +226,11 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             '.htaccess',
-            'bower_components/**/*',
+            
             'images/{,*/}*.{gif,webp}',
-            'styles/fonts/*'
+            'styles/fonts/*',
+            'fonts/*',
+            
           ]
         }, {
           expand: true,
@@ -244,6 +246,25 @@ module.exports = function (grunt) {
         cwd: '<%= yeoman.app %>/styles',
         dest: '.tmp/styles/',
         src: '{,*/}*.css'
+      },
+      fonts: {
+        expand: true,
+        cwd: '<%= yeoman.app %>',
+        dest: '<%= yeoman.dist %>/fonts',
+        flatten: true,
+        src: [ 
+            'bower_components/*/*.eot', 
+            'bower_components/**/*.svg', 
+            'bower_components/**/*.ttf', 
+            'bower_components/**/*.woff',
+            'bower_components/**/*.otf'
+        ]
+      },
+      components: {
+        expand: true,
+        cwd: '<%= yeoman.app %>',
+        dest: '.tmp/',
+        src: [ 'bower_components/**/*' ]
       }
     },
     concurrent: {
@@ -319,11 +340,13 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'copy:components',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
     'concat',
     'copy:dist',
+    'copy:fonts',
     'cdnify',
     'ngmin',
     'cssmin',
