@@ -1,0 +1,46 @@
+.menu.navbar-inverse, .menu.navbar-inverse ul.dropdown-menu {
+    background-color: rgba(35, 30, 22, 0.92);
+}
+
+.menu a {
+    font-size: 150%;
+    font-family: 'Buenard';
+    transition: 0.2s;
+}
+
+.menu .dropdown-menu a {
+    font-size: 135%;
+    color: #9f8a75;
+    
+}
+
+.menu .dropdown-menu a:hover {
+    background-color: inherit;   
+    
+}
+
+.menu a:hover {
+    transition: 0.2s;
+
+}
+
+.menu .navbar-nav {
+    margin-top: 1em;
+}
+
+.menu .navbar-nav li a {
+    border-radius: 5px;   
+}
+
+.menu li {
+    margin: 0.2em;   
+    cursor: pointer;
+}
+
+.menu.navbar-inverse .navbar-nav > .active > a {
+    background-color: rgba(35, 30, 22, 1);   
+}
+
+.menu.navbar-inverse {
+  border: none;   
+}

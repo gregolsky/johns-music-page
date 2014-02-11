@@ -1,61 +1,23 @@
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: rgba(35, 30, 22, 1);
-    
+    background-image: url('../images/brickwall.png');
 }
-
 .logo {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 200px;
+    width: 100px;
     height: 50px;
 }
-
-.menu.navbar-inverse, .menu.navbar-inverse ul.dropdown-menu {
-    background-color: rgba(35, 30, 22, 0.92);
-}
-
-.menu a {
-    font-size: 150%;
-    font-family: 'Buenard';
-    transition: 0.2s;
-}
-
-.menu .dropdown-menu a {
-    font-size: 135%;
-    color: #9f8a75;
-}
-
-.menu .dropdown-menu a:hover {
-    background-color: inherit;   
-}
-
-.menu a:hover {
-    transition: 0.2s;
-}
-
-.menu .navbar-nav {
-    margin-top: 1em;
-}
-
-.menu .navbar-nav li a {
-    border-radius: 5px;   
-}
-
-.menu.navbar-inverse {
-  border: none;   
-}
-
 .content {
-    background-color: #CFC0B1;
+    background-color: white;
+    background-image: url('../images/lightpaperfibers.png');
     border-radius: 5px;
+    padding-bottom: 20px;
 }
-
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.15);
     border-radius: 5px;
 }
-
 .marketing-img {
     background-size: contain;
     width: 180px;
@@ -67,20 +29,17 @@ body {
     background-repeat: no-repeat;
     background-color: white;
 }
-
 .carousel-img {
-    margin: auto; 
+    margin: auto;
     background-size: cover;
     background-position: center center;
     background-repeat: none;
     height: 600px;
 }
-
 .carousel-logo-container {
     background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 5px;   
+    border-radius: 5px;
 }
-
 .carousel-logo {
     display: block;
     position: relative;
@@ -91,14 +50,14 @@ body {
     height: 190px;
     z-index: 1;
 }
-
-.bg {
-    background-image: url('../images/notes2-bg.png');
-    background-size: cover;
-    background-repeat: repeat-y;
-    /*opacity: 0.1;*/
+.top-sm-offset {
+    padding-top: 1em;
 }
 
-.top-sm-offset {
-   padding-top: 1em;
+h1, h2, h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Buenard';   
 }

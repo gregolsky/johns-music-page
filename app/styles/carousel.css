@@ -122,7 +122,8 @@ body {
   }
 
   /* The navbar becomes detached from the top, so we round the corners */
-  .navbar-wrapper .navbar {
+  .navbar {
+    margin-top: 5px;
     border-radius: 4px;
   }
 
