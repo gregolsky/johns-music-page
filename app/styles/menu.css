@@ -33,7 +33,7 @@
 }
 
 .menu li {
-    margin: 0.2em;   
+
     cursor: pointer;
 }
 
@@ -43,4 +43,17 @@
 
 .menu.navbar-inverse {
   border: none;   
+}
+
+.menu-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu .navbar-brand {
+    padding: 0.1em 0 0.5em 0.5em;   
+}
+
+.menu .navbar-nav .menu-item {
+    margin-top: 0.7em;   
 }
