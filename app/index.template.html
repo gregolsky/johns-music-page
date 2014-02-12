@@ -14,9 +14,18 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+    <!-- @if NODE_ENV='test' -->
+        <base href="/johns-music-page/" />
+    <!-- @endif -->
     
-    
+    <!-- @if NODE_ENV='debug' -->
         <base href="/" />
+    <!-- @endif -->
+    
+    <!-- @if NODE_ENV='dev' -->
+        <base href="/" />
+    <!-- @endif -->
+
     <link href='http://fonts.googleapis.com/css?family=Buenard&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
