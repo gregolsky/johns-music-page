@@ -17,12 +17,14 @@
     <link href='http://fonts.googleapis.com/css?family=Buenard&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     
-    <!-- build:css(.tmp) styles/main.css -->
+    <!-- build:css(.tmp) styles/lib.css -->
     <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- endbuild -->
+    
+    <!-- build:css(.tmp) styles/page.css -->
     <link rel="stylesheet" href="styles/carousel.css">
     <link rel="stylesheet" href="styles/backgrounds.css">
     <link rel="stylesheet" href="styles/hover.css">
-    
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/menu.css">
     <!-- endbuild -->
@@ -41,13 +43,14 @@
         <div ng-view></div>
     </div>
 
-    <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    
-    <!--[if lt IE 9]>
+    <!--[if lt IE 9]-->
+    <!-- build:js({.tmp,app}) scripts/ie.js -->
       <script src="bower_components/es5-shim/es5-shim.js"></script>
       <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
+    <!-- endbuild -->
+    <!--[endif]-->
     
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
