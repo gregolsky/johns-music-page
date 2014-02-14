@@ -1,0 +1,17 @@
+<li class="menu-item" 
+    ng-class="{ dropdown: isDropdown, active: isActive }"
+>
+    <a ng-if="!isDropdown" href="{{ href }}" >
+        <i class="glyphicon glyphicon-{{ icon }}" ></i>&nbsp; {{ text }}
+    </a>
+    <a ng-if="isDropdown" class="dropdown-toggle" data-toggle="dropdown" >
+        <i class="glyphicon glyphicon-{{ icon }}"></i>&nbsp; {{ text }}
+    </a>
+    <ul ng-if="isDropdown" class="dropdown-menu" >
+        <li ng-repeat="item in listItems">
+           <a ng-href="{{ item.href }}"> {{ item.text }} </a>
+        </li>
+    </ul>
+    
+    <div ng-transclude></div>
+</li>

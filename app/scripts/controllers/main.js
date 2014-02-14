@@ -8,6 +8,6 @@ angular.module('johnsMusicPage')
 
             $scope.showCarousel = function () {
                 return $location.path() == '/';
-            }
+            };
 
   }]);

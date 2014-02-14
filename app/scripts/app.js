@@ -27,10 +27,7 @@ angular.module('johnsMusicPage', [ 'ngRoute',  'ui.bootstrap' ])
       })   
       .when('/services/event', {
         templateUrl: 'views/services/event/view.html'
-      })    
-      .when('/about', {
-        templateUrl: 'views/about/view.html'
-      })       
+      })        
       .otherwise({
         redirectTo: '/'
       });
