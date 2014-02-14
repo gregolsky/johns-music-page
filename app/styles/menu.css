@@ -18,7 +18,8 @@
     transition: 0.2s;
 }
 .menu .navbar-nav {
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 .menu .navbar-nav li a {
     border-radius: 5px;
@@ -31,7 +32,6 @@
 }
 .menu.navbar-inverse {
     border: none;
-    padding-bottom: 10px;
 }
 .menu-container {
     padding-left: 0;
@@ -40,6 +40,13 @@
 .menu .navbar-brand {
     padding: 0.1em 0 0.5em 0.5em;
 }
-.menu .navbar-nav .menu-item {
-    margin-top: 0.7em;
+.menu .navbar-nav .menu-item, button.navbar-toggle {
+    margin-top: 1em;
+}
+.menu .navbar-collapse,
+.menu .navbar-collapse .navbar-nav {
+    width: 100%;   
+}
+button.navbar-toggle {
+    margin-top: 1.5em;
 }
