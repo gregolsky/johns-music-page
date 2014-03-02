@@ -6,34 +6,46 @@
     font-size: 150%;
     font-family: 'Buenard';
     transition: 0.2s;
+    color: #ECDCC1;
 }
 .menu .dropdown-menu a {
     font-size: 135%;
-    color: #9f8a75;
 }
-.menu .dropdown-menu a:hover {
-    background-color: inherit;
+
+.menu.navbar-inverse .navbar-nav li a {
+    color: #ECDCC1;
 }
-.menu a:hover {
-    transition: 0.2s;
+
+.menu.navbar-inverse .navbar-nav li a:hover {
+    background-color: rgba(35, 30, 22, 1);
 }
+
+.menu .navbar-nav .dropdown-menu li a {
+    border-radius: 0;   
+}
+
 .menu .navbar-nav {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 .menu .navbar-nav li a {
     border-radius: 5px;
+    
 }
 .menu li {
     cursor: pointer;
 }
 .menu.navbar-inverse .navbar-nav > .active > a {
     background-color: rgba(35, 30, 22, 1);
+    color: #ECDCC1;
 }
+
 .menu.navbar-inverse .navbar-nav > .open > a {
     background-color: rgba(0, 0, 0, 0);
 }
-.menu.navbar-inverse {
+
+
+.menu.navbar-inverse { 
     border: none;
 }
 .menu-container {
