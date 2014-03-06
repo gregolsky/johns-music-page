@@ -1,67 +1,32 @@
-.menu.navbar-inverse,
-.menu.navbar-inverse ul.dropdown-menu {
-    background-color: rgba(35, 30, 22, 0.92);
+.menu .logo {
+    width: 130px;
+    height: 70px;
 }
+
 .menu a {
-    font-size: 150%;
-    font-family: 'Buenard';
-    transition: 0.2s;
-    color: #ECDCC1;
-}
-.menu .dropdown-menu a {
-    font-size: 135%;
+    font-family: 'Dosis' !important;
+    font-weight: normal;
+    font-size: large;
+    text-transform: uppercase;
 }
 
-.menu.navbar-inverse .navbar-nav li a {
-    color: #ECDCC1;
+.menu .navbar-nav  {
+    width: 75%;
+    margin-top: 30px;
 }
 
-.menu.navbar-inverse .navbar-nav li a:hover {
-    background-color: rgba(35, 30, 22, 1);
+.menu .navbar-inverse .navbar-nav > .active > a, 
+.menu .navbar-inverse .navbar-nav > .active > a:hover, 
+.menu .navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    border-bottom: 3px solid #c94e20;
 }
 
-.menu .navbar-nav li a {
-    border-radius: 5px;
-}
-.menu .navbar-nav .dropdown-menu li a {
-    border-radius: 0;   
+.menu .menu-item a.active {
+    background-color: transparent;
+    border-bottom: 3px solid #c94e20;
 }
 
-.menu .navbar-nav {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-.menu li {
-    cursor: pointer;
-}
-
-.menu.navbar-inverse .navbar-nav > .active > a {
-    background-color: rgba(35, 30, 22, 1);
-    color: #ECDCC1;
-}
-.menu.navbar-inverse .navbar-nav > .open > a {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-
-.menu.navbar-inverse { 
-    border: none;
-}
-.menu-container {
-    padding-left: 0;
-    padding-right: 0;
-}
-.menu .navbar-brand {
-    padding: 0.1em 0 0.5em 0.5em;
-}
-.menu .navbar-nav .menu-item, button.navbar-toggle {
-    margin-top: 1em;
-}
-.menu .navbar-collapse,
-.menu .navbar-collapse .navbar-nav {
-    width: 100%;   
-}
-button.navbar-toggle {
-    margin-top: 1.5em;
+.dropdown-menu > li > a:hover {
+    color: white;
 }

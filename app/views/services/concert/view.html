@@ -1,20 +1,12 @@
-<div class="row">
-    <div class="col-md-12">
-        <h2>
-            <i class="glyphicon glyphicon-music"></i>&nbsp;
-            Koncerty&nbsp;
-            <small>Dla ciebie, dla rodziny</small>
-        </h2>
-        <hr>
-    </div>
+
+<div class="page-section concert-marketing1 marketing" 
+     ng-include="'views/services/concert/marketing1.html'" 
+     stellar-background-ratio="0.8" >
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <blockquote class="blockquote-reverse" >
-            <p class="lead"><em>Nasza muzyka jest zdolna wywołać chwiejność emocjonalną, zachowanie patologiczne, a nawet bunt i rewolucję.</em></p>
-            <footer>
-                <cite title="Source Title">The Beatles</cite>
-            </footer>
-        </blockquote>
-    </div>
+
+<div class="page-section concert-marketing2 marketing"
+     ng-include="'views/services/concert/marketing2.html'" 
+     stellar-background-ratio="0.8" >
 </div>
+
+<div id="concert" class="page-section" ng-include="'views/services/concert/details.html'" stellar-background-ratio="0.8" ></div>

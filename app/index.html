@@ -14,8 +14,8 @@
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+        <base href="/johns-music-page/" />
     
-        <base href="/" />
     
     <link href='http://fonts.googleapis.com/css?family=Buenard&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -25,11 +25,17 @@
     <!-- endbuild -->
 
     <!-- build:css(.tmp) styles/page.css -->
-    <link rel="stylesheet" href="styles/carousel.css">
-    <link rel="stylesheet" href="styles/backgrounds.css">
+    <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/hover.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/event.css">
+    <link rel="stylesheet" href="styles/business.css">
+    <link rel="stylesheet" href="styles/classes.css">
+    <link rel="stylesheet" href="styles/workshops.css">
+    <link rel="stylesheet" href="styles/concert.css">
+    <link rel="stylesheet" href="styles/about.css">
     <!-- endbuild -->
 </head>
 
@@ -39,12 +45,7 @@
     <![endif]-->
 
     <div ng-include="'views/nav.html'"></div>
-
-    <div ng-include="'views/home/carousel.html'"></div>
-
-    <div class='content container'>
-        <div ng-view></div>
-    </div>
+    <div ng-include="'views/content.html'"></div>
 
     <!--[if lt IE 9]-->
     <!-- build:js({.tmp,app}) scripts/ie.js -->
@@ -60,14 +61,14 @@
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-scroll/angular-scroll.js"></script>
+    <script src="bower_components/angular-stellar/angular-stellar.js"></script>
      <!-- endbuild -->
     
     <!-- build:js({.tmp,app}) scripts/app.js -->
     <script src="scripts/app.js"></script>
-    <script src="scripts/directives/menuItem.js"></script>
-    <script src="scripts/directives/menuListItem.js"></script>
+    <script src="scripts/directives/multiScrollspy.js"></script>
     <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/carousel.js"></script>
     <!-- endbuild -->
 </body>
 

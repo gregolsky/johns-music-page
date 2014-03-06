@@ -1,0 +1,28 @@
+.home-bg {
+    margin-top: 110px;
+    background-size: cover;
+    background-image: url('../images/sax_home.jpg');   
+    width: 100%;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    font-size: 3em;
+    font-family: 'Dosis';
+    color: #eee;
+}
+
+.home-content .home-lead {
+    display: inline-block;
+    position: relative;
+    bottom: -200px;
+    right: -90px;
+}
+
+.home-content .wrap {
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

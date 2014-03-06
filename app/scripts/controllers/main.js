@@ -4,10 +4,13 @@ angular.module('johnsMusicPage')
     .controller('MainController', [
                     '$scope',
                     '$location',
-        function ($scope, $location) {
+                    '$rootScope',
+        function ($scope, $location, $rootScope) {
 
             $scope.showCarousel = function () {
                 return $location.path() == '/';
             };
+
+            
 
   }]);

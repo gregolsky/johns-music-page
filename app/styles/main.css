@@ -1,66 +1,110 @@
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-image: url('../images/brickwall.png');
+    background-color: #c94e20;
+
 }
 .logo {
+    background-image: url('../images/logo-white.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 130px;
-    height: 70px;
-}
-.content {
-    background-color: white;
-    border-radius: 5px;
-    padding-bottom: 20px;
-}
-.carousel-caption {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-}
-.marketing-img {
-    background-size: contain;
-    width: 180px;
-    height: 160px;
-    border-radius: 5px;
-    margin: auto;
-    background-position: center center;
-    border: solid 1px #ccc;
-    background-repeat: no-repeat;
-    background-color: white;
-}
-.carousel-img {
-    margin: auto;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: none;
-    height: 600px;
-}
-.carousel-logo-container {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-radius: 5px;
-}
-.carousel-logo {
-    display: block;
-    position: relative;
-    top: 140px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 160px;
-    z-index: 1;
 }
 .top-sm-offset {
     padding-top: 1em;
 }
-
-h1, h2, h3 {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-p {
-    font-family: 'Buenard';   
-}
-
 .img-thumbnail {
-    background-color: white;   
+    background-color: white;
+}
+.abs {
+    position: absolute;
+}
+.page-section {
+    position: relative;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+.page-section .container {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+}
+
+.page-section .container.details {
+    margin: auto;
+}
+
+.details {
+    background-image: url('../images/fabric.png');
+    color: initial;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+
+.marketing p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 3em;
+}
+
+.marketing-list {
+    text-transform: uppercase;
+}
+
+.marketing-list li {
+    background-color: transparent;
+}
+
+.bg-even .text-primary {
+    color: #743C9F;
+}
+
+.bg-even .page-section .container h2 small {
+    color: #743c9f;   
+}
+
+.bg-odd .page-section .container h2 small {
+    color: #777;   
+}
+
+.page-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.page-section.marketing {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.bg-odd .marketing {
+    color: white !important;  
+}
+
+.bg-odd .marketing .container {
+    background-color: rgba(0, 0, 0, 0.6);    
+}
+
+.bg-even .marketing {
+    color: black !important;
+}
+
+.bg-even .marketing .container {
+    background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.marketing .container {
+    min-height: 300px;   
+}
+
+.bg-odd {
+    background-color: #c94e20;   
+}
+
+.bg-even {
+    background-color: #743C9F;
 }
