@@ -16,25 +16,27 @@ body {
 .abs {
     position: absolute;
 }
+
 .page-section {
     position: relative;
     background-attachment: fixed;
-    padding-bottom: 30px;
-    padding-top: 30px;
     background-size: 100% auto;
+    background-position: 50%;
     background-repeat: no-repeat;
     background-attachment: fixed;    
 }
+
 .page-section .container {
     padding-bottom: 30px;
-    padding-top: 10px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 3px;
+    padding-top: 30px;
 }
 
 .page-section .container.details {
     margin: auto;
+}
+
+.page-section.no-marketing {
+    padding-top: 20px;   
 }
 
 .details {
@@ -42,7 +44,9 @@ body {
     color: initial;
     padding-top: 30px;
     padding-bottom: 30px;
-    border-radius: 5px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    min-height: 500px;
 }
 
 .marketing p {
@@ -71,11 +75,6 @@ body {
     color: #777;   
 }
 
-.page-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
 .page-section.marketing {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -99,6 +98,8 @@ body {
 
 .marketing .container {
     min-height: 300px;   
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .bg-odd {
