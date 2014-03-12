@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('johnsMusicPage', [ 'ngRoute',  'ui.bootstrap', 'angular.stellar', 'duScroll' ])
+angular.module('johnsMusicPage', [ 'ngRoute',  'ui.bootstrap', 'duScroll' ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
