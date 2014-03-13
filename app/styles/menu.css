@@ -30,3 +30,7 @@
 .dropdown-menu > li > a:hover {
     color: white;
 }
+
+.menu {
+    height: 110px;   
+}

@@ -1,21 +1,17 @@
 .home-bg {
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url('../images/sax_home.jpg');
-}
-
-.home-content {
-/*    font-size: 3em;*/
     font-family: 'Dosis';
     color: #eee;
 }
 
-.home-content .home-lead {
+.home-bg .home-lead {
     display: inline-block;
     position: relative;
     bottom: -200px;
     right: -90px;
 }
 
-.home-content .wrap {
-
+.home-bg.marketing {
+    
 }

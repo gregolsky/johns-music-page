@@ -2,6 +2,11 @@ body {
     background-color: #c94e20;
     -webkit-font-smoothing: antialiased;
 }
+
+.content {
+    margin-top: 110px;   
+}
+
 .logo {
     background-image: url('../images/logo-white.png');
     background-size: contain;
@@ -19,7 +24,6 @@ body {
 
 .page-section {
     position: relative;
-    background-attachment: fixed;
     background-size: 100% auto;
     background-position: center top;
     background-origin: border-box;
@@ -76,10 +80,21 @@ body {
     color: #777;   
 }
 
-.page-section.marketing {
-    padding-top: 200px;
-    padding-bottom: 200px;
+@media(max-height:768px){
+    .page-section.marketing {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
 }
+@media(min-height:769px){
+    .page-section.marketing {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+}
+
+
 
 .bg-odd .marketing {
     color: white !important;  
