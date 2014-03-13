@@ -1,6 +1,6 @@
 body {
     background-color: #c94e20;
-
+    -webkit-font-smoothing: antialiased;
 }
 .logo {
     background-image: url('../images/logo-white.png');
