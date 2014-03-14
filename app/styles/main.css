@@ -94,8 +94,6 @@ body {
 
 }
 
-
-
 .bg-odd .marketing {
     color: white !important;  
 }
@@ -124,4 +122,8 @@ body {
 
 .bg-even {
     background-color: #743C9F;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
 }
