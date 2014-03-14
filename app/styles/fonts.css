@@ -1,31 +1,4 @@
 @font-face {
-  font-family: 'Buenard';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Buenard'), local('Buenard-Regular'), url(http://themes.googleusercontent.com/static/fonts/buenard/v4/4JoU7oJoD9G3_Ow8htO7Lg.woff) format('woff');
-}
-@font-face {
-  font-family: 'Buenard';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Buenard Bold'), local('Buenard-Bold'), url(http://themes.googleusercontent.com/static/fonts/buenard/v4/PukUZF_-8h1VwOByTqyaXxsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Hammersmith One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Hammersmith One'), local('HammersmithOne'), url(http://themes.googleusercontent.com/static/fonts/hammersmithone/v5/FWNn6ITYqL6or7ZTmBxRhpil8XvVc-7ds_JI8UKe1GI.woff) format('woff');
-}
-
-@font-face {
-  font-family: 'Gafata';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Gafata'), local('Gafata-Regular'), url(http://themes.googleusercontent.com/static/fonts/gafata/v3/n0nJxSKcks3y30TlBI_4tw.woff) format('woff');
-}
-
-@font-face {git
   font-family: 'Dosis';
   font-style: normal;
   font-weight: 300;
