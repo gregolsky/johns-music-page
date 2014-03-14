@@ -1,17 +1,24 @@
+@font-face {
+  font-family: 'Cherry Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cherry Swash'), local('CherrySwash-Regular'), url(http://themes.googleusercontent.com/static/fonts/cherryswash/v2/HqOk7C7J1TZ5i3L-ejF0vha1RVmPjeKy21_GQJaLlJI.woff) format('woff');
+}
+
 .home-bg {
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url('../images/sax_home.jpg');
-    font-family: 'Dosis';
-    color: #eee;
+    color: white;
 }
 
 .home-bg .home-lead {
     display: inline-block;
+/*
     position: relative;
     bottom: -200px;
-    right: -90px;
-}
-
-.home-bg.marketing {
-    
+    right: -160px;
+*/
+    font-weight: normal;
+    font-size: 3em;
+    font-family: 'Cherry Swash';
 }
