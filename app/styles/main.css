@@ -47,11 +47,11 @@ hr {
 }
 
 .page-section.no-marketing {
-    padding-top: 20px;   
+    border-top: 2px dashed #c94e20;
+    background-color: white;
 }
 
 .details {
-/*    background-image: url('../images/fabric.png');*/
     background-color: white;
     color: initial;
     padding-top: 30px;
@@ -74,18 +74,6 @@ hr {
 
 .marketing-list li {
     background-color: transparent;
-}
-
-.bg-even .text-primary {
-    color: #743C9F;
-}
-
-.bg-even .page-section .container h2 small {
-    color: #743c9f;   
-}
-
-.bg-odd .page-section .container h2 small {
-    color: #777;   
 }
 
 @media(max-height:768px){
@@ -125,16 +113,12 @@ hr {
     border-radius: 500px;
 }
 
-.bg-odd {
-    background-color: #c94e20;   
-}
-
-.bg-even {
-    background-color: #743C9F;
-}
-
 h1, h2, h3 {
     font-family: 'Roboto Slab';
+}
+
+h3 { 
+    color: #c94e20; 
 }
 
 p {
