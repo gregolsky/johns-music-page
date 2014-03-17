@@ -30,8 +30,7 @@ hr {
 
 .page-section {
     position: relative;
-    background-size: 100% auto;
-    background-position: center top;
+    background-position: center center;
     background-origin: border-box;
     background-repeat: no-repeat;
     background-attachment: fixed;    
@@ -76,18 +75,25 @@ hr {
     background-color: transparent;
 }
 
-@media(max-height:768px){
+@media (max-height:768px){
     .page-section.marketing {
         padding-top: 120px;
         padding-bottom: 120px;
     }
 }
-@media(min-height:769px){
+
+@media (min-height:769px){
     .page-section.marketing {
         padding-top: 200px;
         padding-bottom: 200px;
     }
+}
 
+@media (aspect-ratio: 16/9) {
+    .page-section.marketing {
+        background-size: 100% auto;
+        background-position: center top;   
+    }
 }
 
 .bg-odd .marketing {
