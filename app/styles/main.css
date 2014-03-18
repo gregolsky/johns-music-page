@@ -89,10 +89,22 @@ hr {
     }
 }
 
-@media (aspect-ratio: 16/9) {
+@media (aspect-ratio: 16/9), (aspect-ratio: 16/10)  {
     .page-section.marketing {
         background-size: 100% auto;
         background-position: center top;   
+    }
+}
+
+@media (max-width:767px){
+
+    .marketing {
+        display: none;
+    }
+    
+    .page-section {
+        border-top: 2px dashed #c94e20;
+        background-color: white;
     }
 }
 

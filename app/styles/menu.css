@@ -19,7 +19,7 @@
 .menu .navbar-inverse .navbar-nav > .active > a, 
 .menu .navbar-inverse .navbar-nav > .active > a:hover, 
 .menu .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: transparent;
+    background-color: #635038; 
     border-bottom: 3px solid #c94e20;
 }
 
@@ -38,4 +38,8 @@
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: transparent;
+}
+
+.menu .navbar-collapse {
+    background-color: #635038;   
 }

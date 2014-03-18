@@ -17,3 +17,15 @@
     font-size: 3em;
     font-family: 'Cherry Swash';
 }
+
+@media (max-width:767px){
+
+    #start .marketing {
+        display: block;  
+    }
+    
+    .page-section#start {
+        border: none;   
+    }
+    
+}
