@@ -11,6 +11,6 @@ angular.module('johnsMusicPage')
                 return $location.path() == '/';
             };
 
-            
+            $scope.menuCollapsed = true;
 
   }]);
