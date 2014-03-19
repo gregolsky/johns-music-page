@@ -32,14 +32,10 @@
     color: white;
 }
 
-.menu {
-    height: 110px;   
-}
-
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
     background-color: transparent;
 }
 
-.menu .navbar-collapse {
-    background-color: #635038;   
+.navbar-inverse .navbar-collapse {
+    background-color: #635038;
 }
