@@ -5,7 +5,8 @@ angular.module('johnsMusicPage')
                     '$scope',
                     '$location',
                     '$rootScope',
-        function ($scope, $location, $rootScope) {
+                    'scroller',
+        function ($scope, $location, $rootScope, scroller) {
 
             $scope.showCarousel = function () {
                 return $location.path() == '/';
