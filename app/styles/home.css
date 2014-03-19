@@ -9,6 +9,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     background-image: url('../images/sax_home.jpg');
     color: white;
+    border-top: none !important;
 }
 
 .home-bg .home-lead {
