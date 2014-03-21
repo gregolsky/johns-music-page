@@ -8,15 +8,17 @@ angular.module('johnsMusicPage')
 
                     var subelements = [];
                     
+                    var getClientHeight = function () {
+                        return window.innerHeight || document.documentElement.clientHeight;   
+                    };
+                    
                     var isElementInViewport = function(el) {
                         var rect = el.getBoundingClientRect();
-
-                        return (
-                            rect.top >= 0 &&
-                            rect.left >= 0 &&
-                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                        );
+                        var height = getClientHeight();
+                        var isTooHigh = rect.top < 0 && rect.bottom < 0;
+                        var isTooLow = rect.top > height && rect.bottom > height;
+                        var partIsOnTheScreen = rect.top >= 0 || rect.bottom <= height;
+                        return !isTooHigh && !isTooLow;
                     }
                     
                     $rootScope.$on('$duScrollChanged', function ($event, scrollY) {
