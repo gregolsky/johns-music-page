@@ -83,15 +83,15 @@ hr {
 
 @media (max-height:768px){
     .page-section.marketing {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 170px;
+        padding-bottom: 170px;
     }
 }
 
 @media (min-height:769px){
     .page-section.marketing {
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 250px;
+        padding-bottom: 250px;
     }
 }
 
@@ -131,13 +131,6 @@ hr {
 
 .bg-even .marketing .container {
     background-color: rgba(255, 255, 255, 0.8); 
-}
-
-.marketing .container {
-    min-height: 200px;   
-    margin-top: 130px;
-    margin-bottom: 130px;
-    border-radius: 500px;
 }
 
 h1, h2, h3 {
