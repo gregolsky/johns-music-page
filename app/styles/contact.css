@@ -1,0 +1,16 @@
+address.info {
+    margin-bottom: 10px;   
+}
+
+.contact-marketing {
+    background-image: url('http://placekitten.com/1919/1082');
+}
+
+.contact-map {
+    margin-top: 30px;   
+}
+
+#contact address {
+    font-size: larger;
+    margin-top: 30px;
+}

@@ -1,0 +1,36 @@
+
+@media (max-height:768px){
+    .page-section.marketing {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-height:769px){
+    .page-section.marketing {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+@media (aspect-ratio: 16/9), (aspect-ratio: 16/10)  {
+    .page-section.marketing {
+        background-size: 100% auto;
+        background-position: center top;   
+    }
+}
+
+@media (max-width:767px){
+
+    .page-section {
+        border-top: 1px solid #ccc;
+        background-color: white;
+    }
+    
+    .details {
+        box-shadow: none;
+        -ms-box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+    }
+}
