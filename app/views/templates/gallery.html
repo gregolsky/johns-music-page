@@ -1,0 +1,12 @@
+<div class="gallery center-block">
+    <div class="row">
+        <div class="col-md-12">
+            <img class="center-block img-responsive selected" ng-src="{{ selected().image }}" ng-click="next()" /> 
+            <p class="lead text-center caption">{{ selected.caption }}</p>
+        </div>
+        
+        <div class="col-md-4 col-sm-4 col-xs-6" ng-repeat="picture in pictures">
+            <img ng-click="select(picture, $index)" class="center-block img-responsive img-thumbnail" ng-src="{{ picture.thumbnail }}" />
+        </div>
+    </div>
+</div>

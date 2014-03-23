@@ -2,3 +2,19 @@
 .media-bg {
     background-image: url('../images/media.jpg');   
 }
+
+.gallery .selected {
+    cursor: pointer;
+}
+
+.gallery img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transition: 0.4s;
+    transform: rotate(10deg), scale(1.05);
+}
