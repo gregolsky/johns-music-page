@@ -13,8 +13,3 @@
     transition: 0.4s;
     cursor: pointer;
 }
-
-.gallery img:hover {
-    transition: 0.4s;
-    transform: rotate(10deg), scale(1.05);
-}
