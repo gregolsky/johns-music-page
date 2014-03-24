@@ -5,8 +5,11 @@ angular.module('johnsMusicPage')
                     'Picture',
         function ($scope, $location, Picture) {
             
-            $scope.photos = _.map(new Array(10), function (e, i) {
-                return new Picture('Fotka' + i, 'http://lorempixel.com/1280/720/cats?' + i, 'http://lorempixel.com/100/100/cats?' + i );
-            });
+            $scope.popduo = [
+                new Picture("Marcin Janek", "images/Janek4.jpg"),
+                new Picture("Michał Bąk", "images/bak4.jpg"),
+                new Picture("Arkadiusz Krawiel", "images/Krawiel2.jpg"),
+                new Picture("? Prosty", "images/Prosty2.jpg"),
+            ];
             
         }]);

@@ -13,3 +13,20 @@
     transition: 0.4s;
     cursor: pointer;
 }
+
+.popduo-gallery .gallery-picture {
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
+
+.gallery .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 5px;
+}
+
+.media-description, .media-player {
+    margin-top; 10px;
+    margin-bottom: 10px;
+}
