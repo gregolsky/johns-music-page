@@ -9,7 +9,7 @@ angular.module('johnsMusicPage')
                 new Picture('Marcin Janek', 'images/standards-sax.jpg'),
                 new Picture('Michał Bąk', 'images/standards-bass.jpg'),
                 new Picture('Arkadiusz Krawiel', 'images/standards-piano.jpg'),
-                new Picture('? Prosty', 'images/standards-drums.jpg'),
+                new Picture('Jacek Prościński', 'images/standards-drums.jpg'),
             ];
 
             $scope.popduo = [
