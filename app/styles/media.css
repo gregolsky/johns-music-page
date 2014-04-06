@@ -14,7 +14,8 @@
     cursor: pointer;
 }
 
-.popduo-gallery .gallery-picture {
+.popduo-gallery .gallery-picture,
+.trio-gallery .gallery-picture {
     height: 600px;
     background-position: center top;
     background-size: cover;
