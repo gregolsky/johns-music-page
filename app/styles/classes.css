@@ -1,4 +1,13 @@
 
 .classes-marketing1 {
-    background-image: url('../images/kids_blur1.jpg');   
+    background-image: url('../images/kids-lg.jpg');   
+    background-position: center top;
+}
+
+#classes h3 {
+  margin-top: 10px;
+}
+
+#classes div p:not(:first-child) {
+  margin-top: 50px;;
 }
