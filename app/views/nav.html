@@ -18,36 +18,16 @@
 
                 <menu-item href="#start" text="Start" icon="home" ></menu-item>
 
-                <li class="menu-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" multi-scrollspy="#concert, #business, #event">
-                        <i class="hidden-sm glyphicon glyphicon-music"></i>&nbsp;Oferta
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#concert" du-smooth-scroll offset="110">Koncerty</a>
-                        </li>
-                        <li>
-                            <a href="#business" du-smooth-scroll offset="110">Imprezy firmowe</a>
-                        </li>
-                        <li>
-                            <a href="#event" du-smooth-scroll offset="110">Imprezy okolicznościowe</a>
-                        </li>
-                    </ul>
-                </li>
+                <menu-dropdown text="Oferta" icon="music" >
+                  <menu-dropdown-item href="#concert" text="Koncerty" ></menu-dropdown-item>
+                  <menu-dropdown-item href="#business" text="Imprezy firmowe"></menu-dropdown-item>
+                  <menu-dropdown-item href="#event" text="Imprezy okolicznościowe"></menu-dropdown-item>
+                </menu-dropdown>
 
-                <li class="menu-item dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" multi-scrollspy="#classes, #workshops">
-                        <i class="hidden-sm glyphicon glyphicon-book"></i>&nbsp;Edukacja
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#classes" du-smooth-scroll offset="110">Zajęcia muzyczne</a>
-                        </li>
-                        <li>
-                            <a href="#workshops" du-smooth-scroll offset="110">Warsztaty</a>
-                        </li>
-                    </ul>
-                </li>
+                <menu-dropdown text="Edukacja" icon="book" >
+                  <menu-dropdown-item href="#classes" text="Zajęcia muzyczne"></menu-dropdown-item>
+                  <menu-dropdown-item href="#workshops" text="Warsztaty"></menu-dropdown-item>
+                </menu-dropdown>
 
                 <menu-item href="#media" text="Media" icon="film" ></menu-item>
 
