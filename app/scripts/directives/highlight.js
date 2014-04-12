@@ -3,6 +3,9 @@ angular.module('johnsMusicPage')
     function () {
 
       var highlight = {
+        restrict: 'E',
+        transclude: true,
+        replace: true,
         templateUrl: 'views/templates/highlight.html'
       };
 

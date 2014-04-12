@@ -137,6 +137,7 @@ footer {
 .social a:hover {
   transition: 0.4s;
   transform: rotate(360deg) scale(1.1);
+  -webkit-transform: rotate(360deg) scale(1.1);
 }
 
 .pic {
@@ -152,17 +153,19 @@ footer {
 }
 
 .pic.rot-r {
-  transform: rotate(3deg) translate3d(0,0,0);
+  transform: rotate(2deg) translate3d(0,0,0);
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
 .pic.rot-l {
-  transform: rotate(-3deg) translate3d(0,0,0);
+  transform: rotate(-2deg) translate3d(0,0,0);
+  -webkit-transform: rotate(-2deg) translate3d(0,0,0);
 }
 
 .pic.rot-r:hover, .pic.rot-l:hover {
   transform: rotate(0deg) scale(1.2) translate3d(0,0,0);
+  -webkit-transform: rotate(0deg) scale(1.2) translate3d(0,0,0);
   transition: 0.4s;
 }
 
