@@ -38,4 +38,9 @@
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
     }
+
+    .pic:hover, .pic.rot-l:hover, .pic.rot-r:hover {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+    }
 }
