@@ -119,9 +119,10 @@ p {
 }
 
 footer {
-  border-top: 1px solid #e5e5e5;
-  color: #777;
+  color: #ccc;
   padding-top: 20px;
+  background-color: #635038;
+  border-top: 1px solid #423626;
 }
 
 .social {
