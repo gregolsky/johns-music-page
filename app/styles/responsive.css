@@ -26,6 +26,11 @@
         border-top: 1px solid #ccc;
         background-color: white;
     }
+
+    footer .page-section {
+      border-top: none;
+      background-color: initial;
+    }
     
     .details {
         box-shadow: none;
