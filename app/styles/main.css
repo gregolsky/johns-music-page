@@ -32,11 +32,10 @@ hr {
 }
 
 .page-section {
-  position: relative;
   background-position: center center;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-attachment: scroll;    
+  background-attachment: fixed;    
 }
 
 .page-section .container {
