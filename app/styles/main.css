@@ -36,7 +36,7 @@ hr {
   background-position: center center;
   background-origin: border-box;
   background-repeat: no-repeat;
-  background-attachment: fixed;    
+  background-attachment: scroll;    
 }
 
 .page-section .container {
@@ -50,7 +50,8 @@ hr {
 
 .page-section.no-marketing {
   background-color: #aaa;
-margin-top: 30px;}
+  margin-top: 30px;
+}
 
 .details {
   background-color: white;
@@ -155,8 +156,7 @@ footer {
 
 .pic.rot-r {
   transform: rotate(2deg) translate3d(0,0,0);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  -webkit-transform: rotate(2deg) translate3d(0,0,0);
 }
 
 .pic.rot-l {
@@ -180,3 +180,6 @@ footer {
   top: 50%;
 }
 
+.details .row p:first-of-type {
+  margin-top: 30px;
+}
