@@ -15,7 +15,8 @@
 }
 
 .popduo-gallery .gallery-picture,
-.trio-gallery .gallery-picture {
+.trio-gallery .gallery-picture,
+.quartet-gallery .gallery-picture {
     height: 600px;
     background-position: center top;
     background-size: cover;

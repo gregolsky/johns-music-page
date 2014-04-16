@@ -4,17 +4,24 @@ angular.module('johnsMusicPage')
                     '$location',
                     'Picture',
         function ($scope, $location, Picture) {
-            
-            $scope.trio = [
-                new Picture('Marcin Janek', 'images/standards-sax.jpg'),
-                new Picture('Michał Bąk', 'images/standards-bass.jpg'),
-                new Picture('Arkadiusz Krawiel', 'images/standards-piano.jpg'),
-                new Picture('Jacek Prościński', 'images/standards-drums.jpg'),
-            ];
+            'use strict';
 
             $scope.popduo = [
-                new Picture('Marcin Janek', 'images/popduo-sax.jpg'),
-                new Picture('Irek Pestka', 'images/popduo-guitar.jpg')
+                new Picture('Marcin Janek', 'images/duet-sax.jpg'),
+                new Picture('Irek Pestka', 'images/duet-guitar.jpg')
             ];
-            
+
+            $scope.trio = [
+                new Picture('Marcin Janek', 'images/trio-sax.jpg'),
+                new Picture('Michał Ciesielski', 'images/trio-keys.jpg'),
+                new Picture('Michał Bąk', 'images/trio-bass.jpg')
+            ];
+
+            $scope.quartet = [
+                new Picture('Marcin Janek', 'images/quartet-sax.jpg'),
+                new Picture('Michał Bąk', 'images/quartet-bass.jpg'),
+                new Picture('Arkadiusz Krawiel', 'images/quartet-piano.jpg'),
+                new Picture('Jacek Prościński', 'images/quartet-drums.jpg'),
+            ];
+
         }]);

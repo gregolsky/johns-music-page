@@ -1,6 +1,7 @@
 angular.module('johnsMusicPage')
     .directive('gallery', [
         function () {
+            'use strict';
 
             var gallery = {
                 restrict: 'E',
@@ -8,7 +9,8 @@ angular.module('johnsMusicPage')
                 transclude: false,
                 replace: false,
                 scope: {
-                    pictures: '=pictures'
+                    pictures: '=',
+                    interval: '='
                 },
                 link: function link(scope, iElement, iAttrs) {
                     
