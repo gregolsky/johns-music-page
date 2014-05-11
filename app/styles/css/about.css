@@ -1,0 +1,10 @@
+/* line 1, ../sass/about.scss */
+.portrait {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* line 6, ../sass/about.scss */
+.about-bg {
+  background-image: url("../../images/team.jpg");
+}

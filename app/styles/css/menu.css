@@ -1,0 +1,49 @@
+/* line 1, ../sass/menu.scss */
+.menu .logo {
+  width: 130px;
+  height: 70px;
+}
+
+/* line 6, ../sass/menu.scss */
+.menu a {
+  font-family: 'Dosis' !important;
+  font-weight: normal;
+  font-size: large;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* line 14, ../sass/menu.scss */
+.menu .navbar-nav {
+  width: 75%;
+  margin-top: 30px;
+}
+
+/* line 21, ../sass/menu.scss */
+.menu .navbar-inverse .navbar-nav > .active > a,
+.menu .navbar-inverse .navbar-nav > .active > a:hover,
+.menu .navbar-inverse .navbar-nav > .active > a:focus {
+  background-color: #635038;
+  border-bottom: 3px solid #c94e20;
+}
+
+/* line 26, ../sass/menu.scss */
+.menu .menu-item a.active {
+  background-color: transparent;
+  border-bottom: 3px solid #c94e20;
+}
+
+/* line 31, ../sass/menu.scss */
+.dropdown-menu > li > a:hover {
+  color: white;
+}
+
+/* line 35, ../sass/menu.scss */
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: transparent;
+}
+
+/* line 39, ../sass/menu.scss */
+.navbar-inverse .navbar-collapse {
+  background-color: #635038;
+}

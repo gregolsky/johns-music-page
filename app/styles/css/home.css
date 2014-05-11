@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Cherry Swash';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cherry Swash"), local("CherrySwash-Regular"), url(http://themes.googleusercontent.com/static/fonts/cherryswash/v2/HqOk7C7J1TZ5i3L-ejF0vha1RVmPjeKy21_GQJaLlJI.woff) format("woff");
+}
+
+/* line 8, ../sass/home.scss */
+.home-bg {
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url("../../images/sax_home.jpg");
+  color: white;
+  border-top: none !important;
+}
+
+/* line 15, ../sass/home.scss */
+.home-bg .home-lead {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 3em;
+  font-family: 'Cherry Swash';
+}
+
+@media (max-width: 767px) {
+  /* line 24, ../sass/home.scss */
+  #start .marketing {
+    display: block;
+  }
+
+  /* line 28, ../sass/home.scss */
+  .page-section#start {
+    border: none;
+  }
+}

@@ -1,0 +1,48 @@
+@media (max-height: 768px) {
+  /* line 3, ../sass/responsive.scss */
+  .page-section.marketing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media (min-height: 769px) {
+  /* line 10, ../sass/responsive.scss */
+  .page-section.marketing {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (aspect-ratio: 16 / 9), (aspect-ratio: 16 / 10) {
+  /* line 17, ../sass/responsive.scss */
+  .page-section.marketing {
+    background-size: 100% auto;
+    background-position: center top;
+  }
+}
+@media (max-width: 767px) {
+  /* line 25, ../sass/responsive.scss */
+  .page-section {
+    border-top: 1px solid #ccc;
+    background-color: white;
+  }
+
+  /* line 30, ../sass/responsive.scss */
+  footer .page-section {
+    border-top: none;
+    background-color: initial;
+  }
+
+  /* line 35, ../sass/responsive.scss */
+  .details {
+    box-shadow: none;
+    -ms-box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
+
+  /* line 42, ../sass/responsive.scss */
+  .pic:hover, .pic.rot-l:hover, .pic.rot-r:hover {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+}

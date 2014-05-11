@@ -7,7 +7,7 @@
 
 .home-bg {
     background-color: rgba(0, 0, 0, 0.2);
-    background-image: url('../images/sax_home.jpg');
+    background-image: url('../../images/sax_home.jpg');
     color: white;
     border-top: none !important;
 }
@@ -22,11 +22,11 @@
 @media (max-width:767px){
 
     #start .marketing {
-        display: block;  
+        display: block;
     }
-    
+
     .page-section#start {
-        border: none;   
+        border: none;
     }
-    
+
 }

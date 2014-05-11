@@ -1,0 +1,40 @@
+/* line 2, ../sass/media.scss */
+.media-bg {
+  background-image: url("../../images/media.jpg");
+}
+
+/* line 6, ../sass/media.scss */
+.gallery .selected {
+  cursor: pointer;
+}
+
+/* line 10, ../sass/media.scss */
+.gallery img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+/* line 19, ../sass/media.scss */
+.popduo-gallery .gallery-picture,
+.trio-gallery .gallery-picture,
+.quartet-gallery .gallery-picture {
+  height: 600px;
+  background-position: center top;
+  background-size: cover;
+}
+
+/* line 25, ../sass/media.scss */
+.gallery .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 5px;
+}
+
+/* line 31, ../sass/media.scss */
+.media-player {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: larger;
+}

@@ -147,10 +147,6 @@ module.exports = function (grunt) {
             }
         },
 
-
-
-
-
         // Renames files for browser caching purposes
         rev: {
             dist: {
@@ -352,7 +348,17 @@ module.exports = function (grunt) {
                 src: 'app/index.template.html',
                 dest: 'app/index.html'
             }
+        },
+
+        compass: {
+          local: {
+            options: {
+              sassDir: [ '<%= yeoman.app %>/styles/sass' ],
+              cssDir: [ '<%= yeoman.app %>/styles/css' ]
+            }
+          }
         }
+
     });
 
 
@@ -365,6 +371,7 @@ module.exports = function (grunt) {
           'clean:server',
           'env:debug',
           'preprocess',
+          'compass:local',
           'bower-install',
           'concurrent:server',
           'autoprefixer',
@@ -387,13 +394,15 @@ module.exports = function (grunt) {
   ]);
 
     grunt.registerTask('build', function (target) {
-        var env = 'env:' + (target || 'dev');
+        target = target || 'dev';
+        var env = 'env:' + target;
 
         grunt.task.run([
         'clean:dist',
         env,
         'preprocess',
         'bower-install',
+        'compass:' + target,
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',

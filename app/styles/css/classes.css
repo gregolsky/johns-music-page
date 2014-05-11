@@ -1,0 +1,15 @@
+/* line 2, ../sass/classes.scss */
+.classes-marketing1 {
+  background-image: url("../../images/kids-lg.jpg");
+  background-position: center top;
+}
+
+/* line 7, ../sass/classes.scss */
+#classes h3 {
+  margin-top: 10px;
+}
+
+/* line 11, ../sass/classes.scss */
+#classes div p:not(:first-child) {
+  margin-top: 50px;
+}
