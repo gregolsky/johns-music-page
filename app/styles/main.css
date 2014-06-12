@@ -14,7 +14,7 @@ hr {
 }
 
 .logo {
-  background-image: url('../images/logo-white.png');
+  background-image: url('../images/logo-white.svg');
   background-size: contain;
   background-repeat: no-repeat;
 }
