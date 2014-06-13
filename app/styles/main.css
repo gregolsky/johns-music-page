@@ -182,3 +182,7 @@ footer {
 .details .row p:first-of-type {
   margin-top: 30px;
 }
+
+.row ul.lead li {
+  margin: 20px 0px;
+}
