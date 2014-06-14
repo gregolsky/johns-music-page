@@ -149,7 +149,7 @@ footer {
 }
 
 .pic:hover {
-  transform: scale(1.1) translate3d(0, 0, 0);
+  transform: scale(1.25) translate3d(0, 0, 0);
   z-index: 1025;
 }
 
@@ -164,8 +164,8 @@ footer {
 }
 
 .pic.rot-r:hover, .pic.rot-l:hover {
-  transform: rotate(0deg) scale(1.1) translate3d(0,0,0);
-  -webkit-transform: rotate(0deg) scale(1.1) translate3d(0,0,0);
+  transform: rotate(0deg) scale(1.25) translate3d(0,0,0);
+  -webkit-transform: rotate(0deg) scale(1.25) translate3d(0,0,0);
   transition: 0.4s;
 }
 
