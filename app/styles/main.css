@@ -169,6 +169,15 @@ footer {
   transition: 0.4s;
 }
 
+.pic.rot-r:hover {
+  transform: rotate(0deg) scale(1.25) translate3d(0,0,0) translate(-25%, 0);
+}
+
+.pic.rot-l:hover {
+  transform: translate(25%, 0) rotate(0deg) scale(1.25) translate3d(0,0,0);
+
+}
+
 .valign-mid {
   display: block;
   position: relative;
