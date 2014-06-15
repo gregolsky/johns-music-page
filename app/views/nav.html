@@ -2,7 +2,9 @@
     <div class="container">
 
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" ng-click="menuCollapsed = !menuCollapsed">
+            <button type="button"
+              class="navbar-toggle" 
+              ng-click="toggleMenu(!menuCollapsed)">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -16,24 +18,24 @@
         <div collapse="menuCollapsed" class="navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
 
-                <menu-item href="#start" text="Start" icon="home" ></menu-item>
+                <menu-item href="#start" text="Start" icon="home" on-click="toggleMenu()" ></menu-item>
 
                 <menu-dropdown text="Oferta" icon="music" >
-                  <menu-dropdown-item href="#concert" text="Koncerty" ></menu-dropdown-item>
-                  <menu-dropdown-item href="#business" text="Imprezy firmowe"></menu-dropdown-item>
-                  <menu-dropdown-item href="#event" text="Imprezy okolicznościowe"></menu-dropdown-item>
+                  <menu-dropdown-item href="#concert" text="Koncerty" on-click="toggleMenu()" ></menu-dropdown-item>
+                  <menu-dropdown-item href="#business" text="Imprezy firmowe" on-click="toggleMenu()"></menu-dropdown-item>
+                  <menu-dropdown-item href="#event" text="Imprezy okolicznościowe" on-click="toggleMenu()"></menu-dropdown-item>
                 </menu-dropdown>
 
-                <menu-item href="#media" text="Media" icon="film" ></menu-item>
+                <menu-item href="#media" text="Media" icon="film" on-click="toggleMenu()"></menu-item>
 
                 <menu-dropdown text="Edukacja" icon="book" >
-                  <menu-dropdown-item href="#workshops" text="Warsztaty"></menu-dropdown-item>
-                  <menu-dropdown-item href="#classes" text="Zajęcia muzyczne"></menu-dropdown-item>
+                  <menu-dropdown-item href="#workshops" text="Warsztaty" on-click="toggleMenu()"></menu-dropdown-item>
+                  <menu-dropdown-item href="#classes" text="Zajęcia muzyczne" on-click="toggleMenu()"></menu-dropdown-item>
                 </menu-dropdown>
 
-                <menu-item href="#about" text="O nas" icon="star" ></menu-item>
+                <menu-item href="#about" text="O nas" icon="star" on-click="toggleMenu()"></menu-item>
 
-                <menu-item href="#contact" text="Kontakt" icon="earphone" ></menu-item>
+                <menu-item href="#contact" text="Kontakt" icon="earphone" on-click="toggleMenu()"></menu-item>
 
             </ul>
         </div>

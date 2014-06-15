@@ -10,7 +10,8 @@ angular.module('johnsMusicPage')
     scope: {
       href: "@",
       icon: "@",
-      text: "@"
+      text: "@",
+      onClick: "&"
     },
     link: function link(scope, iElement, iAttrs) {
 
