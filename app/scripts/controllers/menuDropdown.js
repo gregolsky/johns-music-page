@@ -25,6 +25,8 @@ angular.module('johnsMusicPage')
           return;
         }
 
+        $scope.toggle(false);
+
         var sel = $scope.items[0].href;
         scroller.scrollToElement(document.querySelector(sel), 110, 1000);
       };

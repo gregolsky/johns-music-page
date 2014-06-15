@@ -1,5 +1,11 @@
 <li class="menu-item">
-<a ng-href="{{ href  }}" du-smooth-scroll du-scrollspy offset="110">
+<a 
+  ng-href="{{ href  }}" 
+  ng-click="onClick()"
+  du-smooth-scroll 
+  du-scrollspy 
+  offset="110"
+   >
   <i class="hidden-sm glyphicon" ng-class="[ 'glyphicon-' + icon ]"></i>
   {{ text }}</a>
 </li>

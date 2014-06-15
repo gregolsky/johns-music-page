@@ -14,4 +14,9 @@ angular.module('johnsMusicPage')
 
             $scope.menuCollapsed = true;
 
+            $scope.toggleMenu = function (v) {
+              v = (!arguments || !arguments.length) ? !$scope.menuCollapsed : v;
+              $scope.menuCollapsed = v;
+            };
+
   }]);
