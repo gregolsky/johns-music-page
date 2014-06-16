@@ -5,8 +5,9 @@ angular.module('johnsMusicPage')
                     '$scope',
                     '$location',
                     '$rootScope',
+                    '$window',
                     'scroller',
-        function ($scope, $location, $rootScope, scroller) {
+        function ($scope, $location, $rootScope, $window, scroller) {
 
             $scope.showCarousel = function () {
                 return $location.path() == '/';
@@ -15,6 +16,10 @@ angular.module('johnsMusicPage')
             $scope.menuCollapsed = true;
 
             $scope.toggleMenu = function (v) {
+              if ($window.innerWidth > 768) {
+                return;
+              }
+              
               v = (!arguments || !arguments.length) ? !$scope.menuCollapsed : v;
               $scope.menuCollapsed = v;
             };
