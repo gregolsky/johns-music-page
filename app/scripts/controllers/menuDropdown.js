@@ -2,17 +2,37 @@ angular.module('johnsMusicPage')
   .controller('MenuDropdownController', [
     '$scope',
     'scroller',
-   function ($scope, scroller) {
+    '$timeout',
+   function ($scope, scroller, $timeout) {
 
       $scope.items = [];
 
-      $scope.status = { open: false };
+      $scope.status = { open: false, toggling: false };
+
+      $scope.delayToggle = function ($event, value) {
+        $scope.status.toggling = true;
+        $timeout(function () {
+          $scope.$apply(function() {
+            if (!$scope.status.toggling) {
+              return;
+            }
+
+            $scope.status.toggling = false;
+            $scope.status.open = value;
+           
+          });
+        }, 100);
+
+      };
+      
+      $scope.cancelToggle = function () {
+        $scope.status.toggling = false;
+      };
 
       $scope.toggle = function ($event, value) {
         $event.preventDefault();
         $event.stopPropagation();
         $scope.status.open = value;
-        console.log("kj");
       };
 
       $scope.itemsSelector = function () {
