@@ -6,10 +6,13 @@ angular.module('johnsMusicPage')
 
       $scope.items = [];
 
-      $scope.open = false;
+      $scope.status = { open: false };
 
-      $scope.toggle = function (value) {
-        $scope.open = value;
+      $scope.toggle = function ($event, value) {
+        $event.preventDefault();
+        $event.stopPropagation();
+        $scope.status.open = value;
+        console.log("kj");
       };
 
       $scope.itemsSelector = function () {
@@ -25,8 +28,6 @@ angular.module('johnsMusicPage')
           return;
         }
 
-        $scope.toggle(false);
-
         var sel = $scope.items[0].href;
         scroller.scrollToElement(document.querySelector(sel), 110, 1000);
       };
@@ -34,5 +35,9 @@ angular.module('johnsMusicPage')
       this.addItem = function (item) {
         $scope.items.push(item);
       };
+
+      $scope.$watch('status.open', function() {
+        console.log(arguments);
+      });
 
    }]); 

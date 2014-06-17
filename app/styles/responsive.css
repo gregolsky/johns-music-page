@@ -12,9 +12,6 @@
     padding-bottom: 200px;
   }
 
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
 }
 
 @media (aspect-ratio: 16/9), (aspect-ratio: 16/10)  {
@@ -47,4 +44,10 @@
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
+}
+
+@media (min-width:768px){
+  /*.dropdown:hover .dropdown-menu {
+    display: block;
+  }*/
 }
