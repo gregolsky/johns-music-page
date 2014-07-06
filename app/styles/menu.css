@@ -19,7 +19,6 @@
 .menu .navbar-inverse .navbar-nav > .active > a, 
 .menu .navbar-inverse .navbar-nav > .active > a:hover, 
 .menu .navbar-inverse .navbar-nav > .active > a:focus {
-    background-color: #635038; 
     border-bottom: 3px solid #c94e20;
 }
 
@@ -32,10 +31,12 @@
     color: white;
 }
 
-.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+.navbar-inverse .navbar-nav > .open > a, 
+.navbar-inverse .navbar-nav > .open > a:hover, 
+.navbar-inverse .navbar-nav > .open > a:focus {
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-collapse {
-    background-color: #635038;
+    /*background-color: #635038;*/
 }

@@ -104,10 +104,6 @@ hr {
   border-radius: 500px;
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto Slab';
-}
-
 h3 { 
   color: #c94e20; 
 }
@@ -194,4 +190,14 @@ p {
 
 .row ul.lead li {
   margin: 20px 0px;
+}
+
+/* bootstrap fixes */
+
+.glyphicon {
+  display: inline-block !important;
+}
+
+.navbar-inverse {
+  border-color: transparent;
 }
