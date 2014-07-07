@@ -115,10 +115,14 @@ p {
 }
 
 .page-footer footer {
-  color: #ccc;
+  color: #fff;
   padding-top: 20px;
-  background-color: #635038;
-  border-top: 1px solid #423626;
+  background-color: #E7602D;
+  border-top: transparent;
+}
+
+.page-footer a {
+  color: #fff;
 }
 
 .social {
@@ -193,6 +197,10 @@ p {
 }
 
 /* bootstrap fixes */
+
+.text-justify {
+  text-align: justify;
+}
 
 .glyphicon {
   display: inline-block !important;
