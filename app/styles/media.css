@@ -33,3 +33,9 @@
     margin-bottom: 10px;
     font-size: larger;
 }
+
+#magicsound .ytframe {
+  max-width: 100% !important;
+  width: 100%;
+  display: block;
+}
