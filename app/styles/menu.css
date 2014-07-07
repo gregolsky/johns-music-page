@@ -30,7 +30,7 @@
 
 .menu .menu-item a.active {
     background-color: transparent;
-    border-bottom: 3px solid #d9d9d9;
+    border-bottom: 3px solid #fff;
 }
 
 .dropdown-menu > li > a:hover {
