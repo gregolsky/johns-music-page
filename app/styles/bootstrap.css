@@ -4971,7 +4971,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-brand {
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -4985,7 +4985,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
@@ -5041,7 +5041,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     background-color: #cf5122;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #d9d9d9;
+    color: #ffffff;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -5063,7 +5063,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-link {
-  color: #d9d9d9;
+  color: #ffffff;
 }
 
 .navbar-inverse .navbar-link:hover {
