@@ -38,9 +38,10 @@ hr {
   background-attachment: fixed;    
 }
 
-.page-section .container {
-  padding-bottom: 30px;
-  padding-top: 30px;
+.page-section .container, 
+.page-section .container-fluid {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
 
 .page-section .container.details {
