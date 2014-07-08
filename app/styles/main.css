@@ -209,3 +209,7 @@ p {
 .navbar-inverse {
   border-color: transparent;
 }
+
+.container-fluid {
+  padding: 0 15px;
+}
