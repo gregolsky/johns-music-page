@@ -154,6 +154,11 @@ h5 {
   text-transform: uppercase;
 }
 
+p {
+  font-size: 19px;
+  font-weight: 100;
+}
+
 .navbar {
   font-family: 'Dosis';
   font-weight: 500;
@@ -2606,8 +2611,8 @@ fieldset[disabled] .btn-warning.active {
 
 .btn-danger {
   color: #ffffff;
-  background-color: #635038;
-  border-color: #635038;
+  background-color: #c9282c;
+  border-color: #c9282c;
 }
 
 .btn-danger:hover,
@@ -2616,8 +2621,8 @@ fieldset[disabled] .btn-warning.active {
 .btn-danger.active,
 .open .dropdown-toggle.btn-danger {
   color: #ffffff;
-  background-color: #493b29;
-  border-color: #3c3022;
+  background-color: #a72125;
+  border-color: #961e21;
 }
 
 .btn-danger:active,
@@ -2641,12 +2646,12 @@ fieldset[disabled] .btn-danger:active,
 .btn-danger.disabled.active,
 .btn-danger[disabled].active,
 fieldset[disabled] .btn-danger.active {
-  background-color: #635038;
-  border-color: #635038;
+  background-color: #c9282c;
+  border-color: #c9282c;
 }
 
 .btn-danger .badge {
-  color: #635038;
+  color: #c9282c;
   background-color: #fff;
 }
 
@@ -3740,7 +3745,7 @@ input[type="button"].btn-block {
 .dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
-  background-color: #635038;
+  background-color: #e7602d;
   outline: 0;
 }
 
@@ -4403,7 +4408,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #635038;
+  background-color: #e7602d;
 }
 
 .nav-stacked > li {
@@ -4882,7 +4887,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-text {
-  color: #635038;
+  color: #c9282c;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -5336,12 +5341,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .label-danger {
-  background-color: #635038;
+  background-color: #c9282c;
 }
 
 .label-danger[href]:hover,
 .label-danger[href]:focus {
-  background-color: #423626;
+  background-color: #9e2023;
 }
 
 .badge {
@@ -5634,7 +5639,7 @@ a.thumbnail.active {
 }
 
 .progress-bar-danger {
-  background-color: #635038;
+  background-color: #c9282c;
 }
 
 .progress-striped .progress-bar-danger {
@@ -5730,8 +5735,8 @@ a.list-group-item.active:hover,
 a.list-group-item.active:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #635038;
-  border-color: #635038;
+  background-color: #e7602d;
+  border-color: #e7602d;
 }
 
 a.list-group-item.active .list-group-item-heading,
@@ -5743,7 +5748,7 @@ a.list-group-item.active:focus .list-group-item-heading {
 a.list-group-item.active .list-group-item-text,
 a.list-group-item.active:hover .list-group-item-text,
 a.list-group-item.active:focus .list-group-item-text {
-  color: #c8b69f;
+  color: #fcebe4;
 }
 
 .list-group-item-heading {

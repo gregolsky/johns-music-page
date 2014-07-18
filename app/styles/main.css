@@ -44,7 +44,7 @@ hr {
   padding-top: 20px;
 }
 
-.page-section .container.details {
+.page-section .container-fluid.details {
   margin: auto;
 }
 
@@ -53,7 +53,7 @@ hr {
   margin-top: 30px;
 }
 
-.details {
+.container-fluid.details, .details {
   background-color: white;
   color: initial;
   padding-top: 30px;
@@ -67,7 +67,8 @@ hr {
   inset  0 -8px 8px -8px #696868;    
 }
 
-.marketing p {
+.marketing p,
+.marketing p.lead {
   padding-top: 30px;
   padding-bottom: 30px;
   font-size: 2.5em;
@@ -99,7 +100,6 @@ hr {
 }
 
 .marketing .container {
-  min-height: 200px;   
   margin-top: 130px;
   margin-bottom: 130px;
   border-radius: 500px;
@@ -107,12 +107,6 @@ hr {
 
 h3 { 
   color: #c94e20; 
-}
-
-p {
-  font-family: 'Roboto Condensed';   
-  font-size: larger;
-  font-weight: 100;
 }
 
 .page-footer footer {
@@ -213,4 +207,11 @@ p {
 
 .container-fluid {
   padding: 0 15px;
+}
+
+/* hacks TODO */
+
+p.lead,
+ul.lead {
+  font-size: 19px; /* remove lead class from paragraph all over the page */
 }

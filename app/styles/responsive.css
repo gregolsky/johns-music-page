@@ -33,7 +33,7 @@
     background-color: initial;
   }
 
-  .details {
+  .container-fluid.details, .details {
     box-shadow: none;
     -ms-box-shadow: none;
     -webkit-box-shadow: none;
@@ -44,10 +44,4 @@
     transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
   }
-}
-
-@media (min-width:768px){
-  /*.dropdown:hover .dropdown-menu {
-    display: block;
-  }*/
 }
