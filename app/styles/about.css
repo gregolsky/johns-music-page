@@ -7,6 +7,9 @@
     background-image: url('../images/team.jpg');   
 }
 
-
+#about ul li {
+  font-weight: 100;
+  font-size: larger;
+}
 
 
