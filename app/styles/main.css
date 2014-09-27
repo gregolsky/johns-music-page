@@ -120,7 +120,12 @@ h3 {
 }
 
 .social {
-  font-size: 2.5em;   
+  font-size: 1.5em;
+}
+
+.social__desc {
+  position: relative;
+  top: -2px;
 }
 
 .social a {
@@ -131,8 +136,8 @@ h3 {
 
 .social a:hover {
   transition: 0.4s;
-  transform: rotate(360deg) scale(1.1);
-  -webkit-transform: rotate(360deg) scale(1.1);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .pic {
