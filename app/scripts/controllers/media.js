@@ -24,4 +24,11 @@ angular.module('johnsMusicPage')
                 new Picture('Jacek Prościński', 'images/quartet-drums.jpg'),
             ];
 
+            $scope.stringArtLadies = [
+                new Picture('String Art Ladies', 'images/string-art-ladies1.jpg'),
+                new Picture('String Art Ladies', 'images/string-art-ladies2.jpg'),
+                new Picture('String Art Ladies', 'images/string-art-ladies3.jpg'),
+                new Picture('String Art Ladies', 'images/string-art-ladies4.jpg')
+            ];
+
         }]);
