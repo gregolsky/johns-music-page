@@ -1,7 +1,7 @@
 body {
   background-color: white;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
 }
 
 hr {
@@ -68,10 +68,11 @@ hr {
 }
 
 p.marketing-text {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-size: 2.5em;
-  font-family: 'Roboto';
+  font-weight: 700;
+  font-family: 'Source Sans Pro';
 }
 
 .marketing-list {
@@ -148,7 +149,7 @@ h3 {
 }
 
 .pic:hover {
-  transform: scale(1.25) translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
   z-index: 1025;
 }
 
@@ -166,15 +167,6 @@ h3 {
   transform: rotate(0deg) scale(1.25) translate3d(0,0,0);
   -webkit-transform: rotate(0deg) scale(1.25) translate3d(0,0,0);
   transition: 0.4s;
-}
-
-.pic.rot-r:hover {
-  transform: rotate(0deg) scale(1.25) translate3d(0,0,0) translate(-25%, 0);
-}
-
-.pic.rot-l:hover {
-  transform: translate(25%, 0) rotate(0deg) scale(1.25) translate3d(0,0,0);
-
 }
 
 .valign-mid {
