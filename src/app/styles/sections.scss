@@ -1,0 +1,145 @@
+.portrait {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-bg {
+    background-image: url('../images/team.jpg');   
+}
+
+#about ul li {
+    font-weight: 100;
+    font-size: larger;
+}
+
+.business-marketing1 {
+    background-image: url('../images/business-board.jpg');
+}
+
+.workshops-marketing1 {
+    background-image: url('../images/workshops-board.jpg');   
+}
+
+.media-bg {
+    background-image: url('../images/media.jpg');
+}
+
+.gallery {
+    .selected {
+        cursor: pointer;
+    }
+    img {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        transition: 0.4s;
+        cursor: pointer;
+    }
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        border-radius: 5px;
+    }
+}
+
+.popduo-gallery,
+.trio-gallery,
+.quartet-gallery,
+.stringArtLadies-gallery {
+    .gallery-picture {
+        height: 600px;
+        background-position: center top;
+        background-size: cover;
+    }
+}
+
+.media-player {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+#magicsound .ytframe {
+    max-width: 100% !important;
+    width: 100%;
+    display: block;
+}
+
+.home-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url('../images/sax_home.jpg');
+    color: white;
+    border-top: none !important;
+    .home-lead {
+        display: inline-block;
+        font-weight: normal;
+        font-size: 3em;
+        font-family: 'Pacifico';
+        margin-bottom: 50px;
+    }
+}
+
+.home-button {
+    font-size: 3em;
+    border-radius: 50%;
+    padding: 6px;
+    span {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: -7px;
+    }
+    &:hover {
+        box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.7);
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.7);
+        -moz-box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.7);
+        transform: scale(1.2) translateY(-10px);
+        -webkit-transform: scale(1.2) translateY(-10px);
+        -moz-transform: scale(1.2) translateY(-10px);
+        transition: 0.2s;
+        transition-timing-function: ease-out;
+    }
+    &:active {
+        transition: 0.1s;
+        background-color: white;
+        color: #e7602d;
+    }
+}
+
+.event-marketing1 {
+    background-image: url('../images/slub2.jpg');   
+    background-position: center top;
+}
+
+.contact-marketing {
+    background-image: url('../images/contact-board.jpg');
+}
+
+.contact-map {
+    margin-top: 30px;   
+}
+
+#contact address {
+    font-size: larger;
+    margin-top: 30px;
+    margin-bottom: 10px;   
+}
+
+.concert-marketing1 {
+    background-image: url('../images/img_7469.jpg');
+}
+
+.classes-marketing1 {
+    background-image: url('../images/kids-lg.jpg');
+    background-position: center top;
+}
+
+#classes {
+    h3 {
+        margin-top: 10px;
+    }
+    div p:not(:first-child) {
+        margin-top: 50px;
+        ;
+    }
+}
