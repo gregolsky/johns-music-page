@@ -1,0 +1,41 @@
+<h1 class="sr-only">
+    John's Music
+</h1>
+
+<div id="start" >
+    @@include('home/home.html')
+</div>
+
+<div id="home" >
+    @@include('home/details.html')
+</div>
+
+<div class="bg-odd" >
+    @@include('services/concert/view.html')
+</div>
+<div class="bg-even" >
+    @@include('services/business/view.html')
+</div>
+<div class="bg-odd" >
+    @@include('services/event/view.html')
+</div>
+<div class="bg-even"  ng-controller="MediaController" >
+    @@include('media/view.html')
+</div>
+<div class="bg-odd" >
+    @@include('education/workshops/view.html')
+</div>
+<div class="bg-even" >
+    @@include('education/classes/view.html')
+</div>
+<div class="bg-odd" >
+    @@include('about/view.html')
+</div>
+<div class="bg-even" >
+    @@include('contact/view.html')
+</div>
+
+<div class="page-footer" >
+@@include('footer.html')
+</div> 
+

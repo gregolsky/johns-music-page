@@ -1,0 +1,89 @@
+$icon-font-path: '../fonts/';
+                           
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900|Dosis|Pacifico|Open+Sans&subset=latin,latin-ext);
+
+h1, h2, h3, h4, h5 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 19px;
+}
+
+.navbar {
+    font-family: 'Source Sans Pro';
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-weight: 500;
+    text-transform: uppercase !important;
+}
+
+.navbar-inverse {
+    border-color: #333333;
+}
+
+@import 'colors';
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-serif:       "Open Sans", serif;
+
+$font-size-p: 19px;
+
+$headings-font-family:    'Source Sans Pro';
+$headings-font-weight:    900;
+$headings-color:          $gray-dark;
+
+$border-radius-base:        3px;
+$border-radius-large:       4px;
+$border-radius-small:       1px;
+
+$btn-font-weight:                300;
+
+$btn-default-color:              $gray-dark;
+$btn-default-bg:                 $gray-lighter;
+$btn-default-border:             $gray-light;
+
+$input-border:                   $gray-light;
+
+$dropdown-link-hover-color:      #fff;
+$dropdown-link-hover-bg:         $brand-primary;
+$dropdown-caret-color:           #000;
+
+$navbar-height:                    60px;
+$navbar-collapse-max-height:       340px;
+
+$navbar-default-color:             $brand-danger;
+$navbar-default-bg:                $gray-lighter;
+$navbar-default-border:            $gray-light;
+
+$navbar-default-link-color:                $gray-dark;
+$navbar-default-link-hover-color:          $gray-dark;
+$navbar-default-link-hover-bg:             $gray-light;
+$navbar-default-link-active-color:         #fff;
+$navbar-default-link-active-bg:            lighten($gray-darker, 50%);
+
+$navbar-default-toggle-icon-bar-bg:        #888;
+
+$navbar-inverse-color:                      $brand-primary;
+$navbar-inverse-bg:                         $brand-primary;
+$navbar-inverse-border:                     $brand-primary;
+
+$navbar-inverse-link-color:                 $white;
+$navbar-inverse-link-active-bg:             $brand-primary;
+
+$hr-border:                   $brand-primary;
+
+
+
+// bower:scss              
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower                
+
+$btn-primary-border:             $brand-primary;
+$btn-success-border:             $brand-success;
+$btn-warning-border:             $brand-warning;
+$btn-danger-border:              $brand-danger;
+
