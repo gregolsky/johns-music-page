@@ -1,11 +1,11 @@
 <div class="container-fluid details">
     <div class="row">
         <div class="col-md-12 center-block text-center">
-            @@include('templates/sectionHeader.html', {
+            {% include 'templates/sectionHeader.html' with {
                 "text": "Zajęcia muzyczne",
                 "sub": "Edukacja i animacja",
                 "icon": "book"
-            })
+            } only %}
         </div>
     </div>
     <div class="row">
@@ -15,6 +15,6 @@
             </p>
         </div>
     </div>
-    @@include('education/rhytmics.html')
-    @@include('education/musictherapy.html')
+    {% include 'education/rhytmics.html' %}
+    {% include 'education/musictherapy.html' %}
 </div>

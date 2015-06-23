@@ -6,19 +6,19 @@
     <div class="container-fluid details">
         <div class="row">
             <div class="col-md-12 center-block text-center">
-                @@include('templates/sectionHeader.html', {
+                {% include 'templates/sectionHeader.html' with {
                     "text": "O nas",
                     "sub": "W pracy i prywatnie",
                     "icon": "star"
-                })
+                } only %}
             </div>
         </div>
         <div class="row">
             <div class="col-lg-offset-2 col-lg-3 col-sm-6">
-                @@include('about/marcin.html')
+                {% include 'about/marcin.html' %}
             </div>
             <div class="col-lg-offset-2 col-lg-3 col-sm-6">
-                @@include('about/asia.html')
+                {% include 'about/asia.html' %}
             </div>
         </div>
     </div>

@@ -6,11 +6,11 @@
     <div class="container-fluid details">
         <div class="row">
             <div class="col-md-12 center-block text-center">
-                @@include('templates/sectionHeader.html', {
+                {% include 'templates/sectionHeader.html' with {
                     "text": "Media",
                     "sub": "Posłuchajmy.",
                     "icon": "film"
-                })
+                } only %}
             </div>
         </div>
         <div class="row">
@@ -21,19 +21,19 @@
             </div>
         </div>
 
-        @@include('media/duet.html')
+        {% include 'media/duet.html' %}
         <hr/>
 
-        @@include('media/trio.html')
+        {% include 'media/trio.html' %}
         <hr/>
 
-        @@include('media/quartet.html')
+        {% include 'media/quartet.html' %}
         <hr/>
 
-        @@include('media/coverband.html')
+        {% include 'media/coverband.html' %}
         <hr/>
 
-        @@include('media/string-art-ladies.html')
+        {% include 'media/string-art-ladies.html' %}
 
     </div>
 </article>

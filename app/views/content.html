@@ -3,39 +3,38 @@
 </h1>
 
 <div id="start" >
-    @@include('home/home.html')
+    {% include 'home/home.html' %}
 </div>
 
 <div id="home" >
-    @@include('home/details.html')
+    {% include 'home/details.html' %}
 </div>
 
 <div class="bg-odd" >
-    @@include('services/concert/view.html')
+    {% include 'services/concert/view.html' %}
 </div>
 <div class="bg-even" >
-    @@include('services/business/view.html')
+    {% include 'services/business/view.html' %}
 </div>
 <div class="bg-odd" >
-    @@include('services/event/view.html')
+    {% include 'services/event/view.html' %}
 </div>
 <div class="bg-even"  ng-controller="MediaController" >
-    @@include('media/view.html')
+    {% include 'media/view.html' %}
 </div>
 <div class="bg-odd" >
-    @@include('education/workshops/view.html')
+    {% include 'education/workshops/view.html' %}
 </div>
 <div class="bg-even" >
-    @@include('education/classes/view.html')
+    {% include 'education/classes/view.html' %}
 </div>
 <div class="bg-odd" >
-    @@include('about/view.html')
+    {% include 'about/view.html' %}
 </div>
 <div class="bg-even" >
-    @@include('contact/view.html')
+    {% include 'contact/view.html' %}
 </div>
 
 <div class="page-footer" >
-@@include('footer.html')
-</div> 
-
+    {% include 'footer.html' %}
+</div>

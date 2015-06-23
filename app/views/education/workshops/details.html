@@ -1,11 +1,11 @@
 <div class="container-fluid details">
   <div class="row">
     <div class="col-md-12 center-block text-center">
-        @@include('templates/sectionHeader.html', {
+        {% include 'templates/sectionHeader.html' with {
             "text": "Lekcje i warsztaty",
             "sub": "Graj i śpiewaj",
             "icon": "book"
-        })
+        } only %}
     </div>
   </div>
   <div class="row">
@@ -15,7 +15,7 @@
           <p class="text-justify">Muzyka towarzyszy ludziom od zawsze - stanowi&nbsp;<em>narzędzie wymiany myśli, emocji i koncepcji</em>. Chcielibyśmy ułatwić komunikację każdemu, kto pragnie <span class="text-primary">lepiej poznać medium dźwięku</span>. </p>
           <h3>Lekcje instrumentu i warsztaty
           </h3>
-          <p> 
+          <p>
           Z nami nauczysz się grać na różnych instrumentach:
           </p>
           <ul class="lead">
@@ -43,7 +43,7 @@
           <p>Oferujemy warsztaty oraz&nbsp;<em>indywidualne zajęcia</em>&nbsp;dotyczące interesujących klienta elementów sztuki muzycznej.</p>
           <p>Propozycje warsztatów i cykli edukacyjnych:</p>
           <ul class="lead" >
-            <li>Rodzina instrumentów dętych drewnianych saksofon, klarnet, flet i inne</li>  
+            <li>Rodzina instrumentów dętych drewnianych saksofon, klarnet, flet i inne</li>
             <li>Gra w zespole</li>
             <li>Warsztaty improwizacji</li>
             <li>Harmonia - zalety uczenia się budowy akordów</li>
@@ -72,4 +72,3 @@
     </div>
   </div>
 </div>
-

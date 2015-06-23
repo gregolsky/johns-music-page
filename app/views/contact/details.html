@@ -2,11 +2,11 @@
     <div class="container-fluid details">
         <div class="row">
             <div class="col-md-12">
-                @@include('templates/sectionHeader.html', {
+                {% include 'templates/sectionHeader.html' with {
                     "text": "Kontakt",
                     "sub": "Zadzwoń lub napisz",
                     "icon": "earphone"
-                })
+                } only %}
             </div>
         </div>
         <div class="row">
@@ -60,7 +60,7 @@
 
         <div class="contact-map row">
             <div class="col-xs-12 col-md-10 col-md-offset-1">
-                
+
             </div>
         </div>
     </div>

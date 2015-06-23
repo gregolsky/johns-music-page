@@ -18,54 +18,40 @@
             <div collapse="menuCollapsed" class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
 
-                    @@include('templates/menuItem.html', {
-                        "href": "#start",
-                        "text": "Start",
-                        "icon": "home"
-                    }) <!-- onclick toggleMenu() -->
+                    {% include './templates/menuItem.html' with { "href": "#start", "text": "Start", "icon": "home" } only %}
 
-                    @@include('templates/menuDropdownItem.html', {
+                    {% include './templates/menuDropdown.html' with {
                         "href": "#concert",
                         "text": "Oferta",
                         "icon": "music",
                         "items": [
+                            { "href": "#concert", "text": "Koncerty" },
+                            { "href": "#business", "text": "Imprezy firmowe" },
+                            { "href": "#event", "text": "Imprezy okolicznościowe" }
+                        ]
+                    } only %}
+
+                    {% include './templates/menuItem.html' with { "href": "#media", "text": "Media", "icon": "film" } only %}
+
+                    {% include './templates/menuDropdown.html' with {
+                        "href": "#workshops",
+                        "text": "Edukacja",
+                        "icon": "book",
+                        "items": [
                             {
-                                "href": "#concert",
-                                "text": "Koncerty"
+                                "href": "#workshops",
+                                "text": "Lekcje i warsztaty"
                             },
                             {
-                                "href": "#business",
-                                "text": "Imprezy firmowe"
-                            },
-                            {
-                                "href": "#event",
-                                "text": "Imprezy okolicznościowe"
+                                "href": "#classes",
+                                "text": "Zajęcia muzyczne"
                             }
                         ]
-                    })
+                    } only %}
 
-                    @@include('templates/menuItem.html', {
-                        "href": "#media",
-                        "text": "Media",
-                        "icon": "film"
-                    }) <!-- onclick toggleMenu() -->
+                    {% include './templates/menuItem.html' with { "href": "#about", "text": "O nas", "icon": "star" } only %}
 
-                    <menu-dropdown text="Edukacja" icon="book" >
-                      <menu-dropdown-item href="#workshops" text="Lekcje i warsztaty" on-click="toggleMenu()"></menu-dropdown-item>
-                      <menu-dropdown-item href="#classes" text="Zajęcia muzyczne" on-click="toggleMenu()"></menu-dropdown-item>
-                    </menu-dropdown>
-
-                    @@include('templates/menuItem.html', {
-                        "href": "#about",
-                        "text": "O nas",
-                        "icon": "star"
-                    }) <!-- onclick toggleMenu() -->
-
-                    @@include('templates/menuItem.html', {
-                        "href": "#contact",
-                        "text": "Kontakt",
-                        "icon": "earphone"
-                    }) <!-- onclick toggleMenu() -->
+                    {% include './templates/menuItem.html' with { "href": "#contact", "text": "Kontakt", "icon": "earphone" } only %}
 
                 </ul>
             </div>

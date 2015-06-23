@@ -1,12 +1,14 @@
 <li class="dropdown menu-item" is-open="status.open">
   <a ng-mouseleave="delayToggle($event, false)" ng-click="toggle($event, true); gotoFirstItem();" ng-mouseenter="toggle($event, true)" multi-scrollspy="{{ itemsSelector() }}">
-    <i class="hidden-sm glyphicon" ng-class="[ 'glyphicon-' + icon ]"></i>&nbsp;{{ text }}
+    <i class="hidden-sm glyphicon glyphicon-@@icon" ></i>&nbsp;{{ text }}
   </a>
-  <ul class="dropdown-menu" role="menu" ng-mouseenter="cancelToggle()" ng-mouseleave="toggle($event, false)">
-    <li ng-repeat="item in items">
-      <a ng-href="{{ item.href }}" ng-click="item.onClick()" du-smooth-scroll offset="110">{{ item.text }}</a>
-    </li>
+  <ul class="dropdown-menu" role="menu">
+    {% for item in items %}
+        <li>
+          <a href="{{ item.href }}" du-smooth-scroll offset="110">
+              {{ item.text }}
+          </a>
+        </li>
+    {% endfor %}
   </ul>
-  <div ng-transclude style='display: none;'>
-  </div>
 </li>
