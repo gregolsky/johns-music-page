@@ -1,5 +1,4 @@
-$icon-font-path: '../fonts/';
-                           
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,900|Dosis|Pacifico|Open+Sans&subset=latin,latin-ext);
 
 h1, h2, h3, h4, h5 {
@@ -76,14 +75,13 @@ $navbar-inverse-link-active-bg:             $brand-primary;
 
 $hr-border:                   $brand-primary;
 
+$icon-font-path: '../fonts/';
 
-
-// bower:scss              
+// bower:scss
 @import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-// endbower                
+// endbower
 
 $btn-primary-border:             $brand-primary;
 $btn-success-border:             $brand-success;
 $btn-warning-border:             $brand-warning;
 $btn-danger-border:              $brand-danger;
-
