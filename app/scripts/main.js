@@ -15,6 +15,8 @@
             $('html, body').animate({
                 scrollTop: target.offset().top
             }, 1000);
+
+            history.pushState({}, '', href);
         }
 
     });
