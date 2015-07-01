@@ -1,18 +1,22 @@
 /* jshint devel:true */
 
-var menuHeight = $('nav').height();
+(function ($) {
+    'use strict';
 
-$("a[href^=#]").on('click', function(event) {
+    $('a[href^=#]').on('click', function(event) {
 
-    var hashIdx = this.href.indexOf('#');
-    var target = $(this.href.slice(hashIdx));
+        var href = this.href;
+        var hashIdx = href.indexOf('#');
+        var target = $(href.slice(hashIdx));
 
-    if( target.length ) {
-        event.preventDefault();
+        if (target.length) {
+            event.preventDefault();
 
-        $('html, body').animate({
-            scrollTop: target.offset().top - menuHeight
-        }, 1000);
-    }
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 1000);
+        }
 
-});
+    });
+
+})(window.$);
