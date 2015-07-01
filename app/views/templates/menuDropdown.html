@@ -1,6 +1,6 @@
 <li class="dropdown menu-item" is-open="status.open">
-  <a ng-mouseleave="delayToggle($event, false)" ng-click="toggle($event, true); gotoFirstItem();" ng-mouseenter="toggle($event, true)" multi-scrollspy="{{ itemsSelector() }}">
-    <i class="hidden-sm glyphicon glyphicon-@@icon" ></i>&nbsp;{{ text }}
+  <a multi-scrollspy="{{ itemsSelector() }}">
+    <i class="hidden-sm glyphicon glyphicon-{{ icon }}" ></i>&nbsp;{{ text }}
   </a>
   <ul class="dropdown-menu" role="menu">
     {% for item in items %}
