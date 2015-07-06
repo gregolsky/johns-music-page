@@ -19,7 +19,15 @@
         </p>
     </div>
     <div class="col-md-6 col-lg-4">
-        <gallery class="stringArtLadies-gallery" pictures="stringArtLadies" interval="3500"></gallery>
+        {% include 'templates/gallery.html' with {
+            "id": "string-art-ladies-gallery",
+            "interval": 2500,
+            "items": [
+                { "caption": "Dorota Roszkowska", "image": "images/string-art-ladies-dr.jpg" },
+                { "caption": "Kasia Libront", "image": "images/string-art-ladies-kl.jpg" },
+                { "caption": "Karolina Majka Stokowska", "image": "images/string-art-ladies-kms.jpg" },
+                { "caption": "Karolina Kilian", "image": "images/string-art-ladies-kk.jpg" }
+            ]
+        } only %}
     </div>
 </section>
-

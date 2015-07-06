@@ -1,3 +1,5 @@
+@import 'colors';
+
 .page-section[id]:before {
     visibility: hidden;
     display: block;
@@ -42,39 +44,49 @@
     width: 100%;
 }
 
+.caption {
+    width: auto;
+    height: auto;
+    padding: 0px 5px;
+    color: $white;
+    font-size: 1.7em;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 0 0 #000;
+    text-transform: uppercase;
+    background-color: fade-out($brand-primary, 0.1);
+}
+
+.gallery {
+
+    .item {
+
+        .caption {
+            position: absolute;
+            bottom: 20%;
+            z-index: 0;
+        }
+
+        &:nth-child(odd) {
+            .caption {
+                left: 10%;
+            }
+        }
+
+        &:nth-child(even) {
+            .caption {
+                right: 10%;
+            }
+        }
+
+    }
+}
+
 .gallery-img {
     width: 100%;
 }
 
-/*
-.gallery {
-    .selected {
-        cursor: pointer;
-    }
-    img {
-        margin-top: 5px;
-        margin-bottom: 5px;
-        transition: 0.4s;
-        cursor: pointer;
-    }
-    .carousel-caption {
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        border-radius: 5px;
-    }
-}
-
-.popduo-gallery,
-.trio-gallery,
-.quartet-gallery,
-.stringArtLadies-gallery {
-    .gallery-picture {
-        height: 600px;
-        background-position: center top;
-        background-size: cover;
-    }
-}
-*/
 .media-player {
     margin-top: 10px;
     margin-bottom: 10px;

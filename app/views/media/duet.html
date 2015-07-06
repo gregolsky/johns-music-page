@@ -19,8 +19,15 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 col-lg-4" style="height: 600px;">
-        <gallery class="popduo-gallery" pictures="popduo" interval="2500"></gallery>
+    <div class="col-md-6 col-lg-4" >
+        {% include 'templates/gallery.html' with {
+            "id": "popduo-gallery",
+            "interval": 2000,
+            "items": [
+                { "caption": "Irek Pestka", "image": "images/duet-guitar.jpg" },
+                { "caption": "Marcin Janek", "image": "images/duet-sax.jpg" }
+            ]
+        } only %}
     </div>
 </div>
 </section>
