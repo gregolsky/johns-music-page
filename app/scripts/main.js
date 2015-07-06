@@ -3,22 +3,33 @@
 (function ($) {
     'use strict';
 
-    $('a[href^=#]').on('click', function(event) {
+    function initializeGalleries() {
+        $('#trio-gallery').carousel();
+        $('#quartet-gallery').carousel();
 
-        var href = this.href;
-        var hashIdx = href.indexOf('#');
-        var target = $(href.slice(hashIdx));
+    }
 
-        if (target.length) {
-            event.preventDefault();
+    function initializeAnchorLinks() {
+        $('nav a[href^=#]').on('click', function(event) {
 
-            $('html, body').animate({
-                scrollTop: target.offset().top
-            }, 1000);
+            var href = this.href;
+            var hashIdx = href.indexOf('#');
+            var target = $(href.slice(hashIdx));
 
-            history.pushState({}, '', href);
-        }
+            if (target.length) {
+                event.preventDefault();
 
-    });
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+
+                history.pushState({}, '', href);
+            }
+
+        });
+    }
+
+    initializeGalleries();
+    initializeAnchorLinks();
 
 })(window.$);

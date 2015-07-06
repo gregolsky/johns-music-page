@@ -1,4 +1,4 @@
-<section> 
+<section>
 <div class="row">
     <div class="col-md-12 col-lg-offset-2 col-lg-8">
         <h3>Seaside Jazz Quartet
@@ -13,7 +13,19 @@
         </p>
     </div>
     <div class="col-md-6 col-lg-4">
-        <gallery class="quartet-gallery" pictures="quartet" interval="3000"></gallery>
+        <div class="gallery">
+        {% include 'templates/gallery.html' with {
+            "id": "quartet-gallery",
+            "interval": 3500,
+            "items": [
+                { "caption": "Marcin Janek", "image": "images/quartet-sax.jpg" },
+                { "caption": "Michał Bąk", "image": "images/quartet-bass.jpg" },
+                { "caption": "Arkadiusz Krawiel", "image": "images/quartet-piano.jpg" },
+                { "caption": "Jacek Prościński", "image": "images/quartet-drums.jpg" }
+            ]
+        } only %}
+
+        </div>
     </div>
 </div>
 </section>

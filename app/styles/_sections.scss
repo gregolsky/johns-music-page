@@ -1,4 +1,4 @@
-[id]:before {
+.page-section[id]:before {
     visibility: hidden;
     display: block;
     content: " ";
@@ -32,6 +32,21 @@
     background-image: url('../images/media.jpg');
 }
 
+#trio-gallery {
+    max-width: 545px;
+    height: 100%;
+}
+
+#quartet-gallery {
+    height: auto;
+    width: 100%;
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+/*
 .gallery {
     .selected {
         cursor: pointer;
@@ -59,7 +74,7 @@
         background-size: cover;
     }
 }
-
+*/
 .media-player {
     margin-top: 10px;
     margin-bottom: 10px;
