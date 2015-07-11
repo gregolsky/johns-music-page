@@ -1,11 +1,11 @@
 @import 'colors';
 
-.page-section[id]:before {
-    visibility: hidden;
+#start::before, article[id]::before {
     display: block;
     content: " ";
     height: 110px;
     margin-top: -110px;
+    visibility: hidden;
 }
 
 .portrait {

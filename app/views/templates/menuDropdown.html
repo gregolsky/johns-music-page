@@ -1,11 +1,11 @@
-<li class="dropdown menu-item" is-open="status.open">
-  <a multi-scrollspy="{{ itemsSelector() }}">
+<li class="dropdown menu-item" >
+  <a href="{{ items[0].href }}" >
     <i class="hidden-sm glyphicon glyphicon-{{ icon }}" ></i>&nbsp;{{ text }}
   </a>
   <ul class="dropdown-menu" role="menu">
     {% for item in items %}
         <li>
-          <a href="{{ item.href }}" du-smooth-scroll offset="110">
+          <a href="{{ item.href }}" >
               {{ item.text }}
           </a>
         </li>
