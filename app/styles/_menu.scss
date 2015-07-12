@@ -25,7 +25,7 @@ nav {
             border-bottom: 3px solid transparent;
             -webkit-transform-style: preserve-3d;
 
-            &:hover {
+            &:hover, .active {
                 -webkit-transform-style: preserve-3d;
                 border-bottom: 3px solid $white;
             }
@@ -48,18 +48,34 @@ nav {
     }
 }
 
-// .menu .navbar-inverse .navbar-nav > .active > a,
-// .menu .navbar-inverse .navbar-nav > .active > a:hover,
-// .menu .navbar-inverse .navbar-nav > .active > a:focus {
-//     border-bottom: 3px solid #fff;
-// }
+.menu .navbar-inverse .navbar-nav > .active > a,
+.menu .navbar-inverse .navbar-nav > .active > a:hover,
+.menu .navbar-inverse .navbar-nav > .active > a:focus {
+    border-bottom: 3px solid #fff;
+}
 
-.menu .navbar-inverse .navbar-nav > .open > a,
-.navbar-inverse .navbar-nav > .open > a:hover,
-.navbar-inverse .navbar-nav > .open > a:focus {
-    background-color: transparent;
+#menu {
+
+    .logo {
+        z-index: 1020;
+    }
+
+    background-color: $brand-primary;
+
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: transparent;
+    }
+
 }
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: $white;
+
+    &:hover {
+        background-color: #aaa;
+    }
 }
