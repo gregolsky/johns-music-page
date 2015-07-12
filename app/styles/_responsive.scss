@@ -22,19 +22,21 @@
 
 @media (max-width: 767px) {
     .page-section {
-        border-top: 1px solid #ccc;
-        background-color: white;
+        border-bottom: 1px solid #ccc;
     }
+
     footer .page-section {
         border-top: none;
         background-color: initial;
     }
+
     .details {
         box-shadow: none;
         -ms-box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
     }
+    
     .pic:hover,
     .pic.rot-l:hover,
     .pic.rot-r:hover {

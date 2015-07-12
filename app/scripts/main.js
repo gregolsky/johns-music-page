@@ -3,13 +3,6 @@
 (function (window, $) {
     'use strict';
 
-    $(window).on('scroll', function () {
-        $('.debug').html(
-            'Page Y Offset: ' + window.pageYOffset + '<br/>' +
-            '#home top: ' + document.getElementById('home').getBoundingClientRect().top + '<br/>' +
-            'calc top: ' + getScrollTop(document.getElementById('home')));
-    });
-
     function initializeGalleries() {
         $('#popduo-gallery,#trio-gallery,#string-art-ladies-gallery,#quartet-gallery').carousel();
     }

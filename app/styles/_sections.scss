@@ -1,11 +1,18 @@
 @import 'colors';
 
+.page-section.marketing {
+    box-sizing: border-box;
+}
+
+article {
+    position: relative;
+}
+
 #start::before, article[id]::before {
     display: block;
-    content: " ";
+    content: "";
     height: 110px;
     margin-top: -110px;
-    visibility: hidden;
 }
 
 .portrait {
@@ -34,14 +41,8 @@
     background-image: url('../images/media.jpg');
 }
 
-#trio-gallery {
-    max-width: 545px;
-    height: 100%;
-}
-
-#quartet-gallery {
-    height: auto;
-    width: 100%;
+.gallery {
+    transform: translate3d(0,0,0);
 }
 
 .caption {
@@ -175,6 +176,5 @@
     }
     div p:not(:first-child) {
         margin-top: 50px;
-        ;
     }
 }
