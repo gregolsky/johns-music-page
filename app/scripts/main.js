@@ -12,7 +12,7 @@
     }
 
     function initializeAnchorLinks() {
-        $('nav a[href^=#], #start a[href^=#]').on('click', function(event) {
+        $('nav a[href], #start a[href]').on('click', function(event) {
 
             var href = this.href;
             var hashIdx = href.indexOf('#');

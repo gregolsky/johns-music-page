@@ -6,6 +6,7 @@ var swigEngine = require('swig');
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
+var flatten = require('gulp-flatten');
 var reload = browserSync.reload;
 
 var swigOpts = {
@@ -44,8 +45,8 @@ gulp.task('templating', function () {
 
     return gulp.src('app/*.html')
     .pipe(swig(swigOpts))
-    .pipe(gulp.dest('.tmp/'))
-})
+    .pipe(gulp.dest('.tmp/'));
+});
 
 gulp.task('html', [ 'styles'], function () {
   var assets = $.useref.assets({searchPath: ['.tmp', 'app', '.']});
@@ -73,13 +74,20 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('fonts', function () {
-  return gulp.src(require('main-bower-files')({
-    filter: '**/*.{eot,svg,ttf,woff,woff2}'
-  }).concat('app/fonts/**/*'))
+gulp.task('appfonts', function () {
+    return gulp.src('app/fonts/**/*')
     .pipe(gulp.dest('.tmp/fonts'))
     .pipe(gulp.dest('dist/fonts'));
 });
+
+gulp.task('bsfonts', function () {
+    return gulp.src('app/bower_components/bootstrap-sass-official/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(flatten())
+    .pipe(gulp.dest('.tmp/fonts'))
+    .pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('fonts', ['appfonts', 'bsfonts']);
 
 gulp.task('extras', function () {
   return gulp.src([
@@ -137,7 +145,8 @@ gulp.task('wiredep', function () {
 });
 
 gulp.task('build', ['jshint', 'templating', 'html', 'images', 'fonts', 'extras'], function () {
-  return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
+  return gulp.src('dist/**/*')
+    .pipe($.size({title: 'build', gzip: true}));
 });
 
 gulp.task('default', ['clean'], function () {
