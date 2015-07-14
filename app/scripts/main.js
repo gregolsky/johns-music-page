@@ -129,9 +129,16 @@
 
     }
 
+    function hideCollapsedMenuOnClick() {
+        $('.navbar-nav li a').click(function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+    }
+
     initializeGalleries();
     initializeAnchorLinks();
     setupScrollSpy();
     disableHoverOnScroll();
+    hideCollapsedMenuOnClick();
 
 })(window, window.$);

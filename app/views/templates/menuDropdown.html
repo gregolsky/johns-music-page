@@ -1,6 +1,7 @@
 <li class="dropdown menu-item" >
   <a href="{{ items[0].href }}" data-spy="{{ spy }}" >
-    <i class="hidden-sm glyphicon glyphicon-{{ icon }}" ></i>&nbsp;{{ text }}
+    <span class="hidden-sm glyphicon glyphicon-{{ icon }}" ></span>
+    {{ text }}
   </a>
   <ul class="dropdown-menu" role="menu">
     {% for item in items %}
