@@ -1,0 +1,7 @@
+<div class="page-section classes-marketing1 marketing hidden-xs" >
+    {% include './marketing1.nunjucks' %}
+</div>
+
+<article id="classes" class="page-section">
+    {% include './details.nunjucks' %}
+</article>

@@ -1,0 +1,17 @@
+{
+  "generator-mocha": {
+    "ui": "bdd",
+    "rjs": false
+  },
+  "generator-yeogurt": {
+    "config": {
+      "projectName": "johns-music-v2",
+      "htmlOption": "nunjucks",
+      "jsPreprocessor": "es6",
+      "cssOption": "sass",
+      "sassSyntax": "scss",
+      "testFramework": "none"
+    },
+    "version": "2.0.1"
+  }
+}

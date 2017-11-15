@@ -1,0 +1,7 @@
+<div class="page-section marketing contact-marketing hidden-xs">
+    {% include './marketing.nunjucks' %}
+</div>
+
+<article id="contact" class="page-section" >
+    {% include './details.nunjucks' %}
+</article>

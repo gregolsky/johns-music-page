@@ -1,0 +1,32 @@
+{% import "_layouts/macros/carousel.nunjucks" as carousel %}
+
+<section>
+<div class="row">
+    <div class="col-md-12 col-lg-offset-2 col-lg-8">
+        <h3>String Art Ladies
+            <small></small>
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-offset-2 col-md-6 col-lg-4 media-description">
+        <p class="text-justify">
+        String Art Ladies to cztery młode, piękne, utalentowane kobiety, absolwentki Akademii Muzycznej. Pomysłowo przekształcają najpopularniejsze utwory muzyki rozrywkowej z pięknem i intensywnością klasycznego instrumentarium smyczkowego. Nazwa zespołu pochodzi od sztuki String Art, która ukazuje różnorodne połączenia kolorystyczne nici. Podobnie jak kolorystyka String Art, repertuar kwartetu jest bardzo zróżnicowany. Poza standardami klasycznymi dziewczyny grają przede wszystkim muzykę rozrywkową. Na ich koncertach usłyszeć można utwory w stylu irlandzkim, gruzińskim, country, a także POP, ROCK, R&B. Koncerty kwartetu wykonywane są z towarzyszeniem znakomitego perkusisty Łukasza Łapińskiego.
+        </p>
+        <p>
+        <em>Dorota Roszkowska</em><br/>
+        <em>Kasia Libront</em><br/>
+        <em>Karolina Majka Stokowska</em><br/>
+        <em>Karolina Kilian</em><br/>
+        </p>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        {{ carousel.carousel("string-art-ladies-gallery", 2000, [
+                { "caption": "Dorota Roszkowska", "image": "images/string-art-ladies-dr.jpg" },
+                { "caption": "Kasia Libront", "image": "images/string-art-ladies-kl.jpg" },
+                { "caption": "Karolina Majka Stokowska", "image": "images/string-art-ladies-kms.jpg" },
+                { "caption": "Karolina Kilian", "image": "images/string-art-ladies-kk.jpg" }
+            ])
+        }}
+    </div>
+</section>

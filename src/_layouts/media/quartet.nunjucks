@@ -1,0 +1,27 @@
+{% import "_layouts/macros/carousel.nunjucks" as carousel %}
+
+<section>
+<div class="row">
+    <div class="col-md-12 col-lg-offset-2 col-lg-8">
+        <h3>Seaside Jazz Quartet
+            <small></small>
+        </h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-offset-2 col-md-6 col-lg-4 media-description">
+        <p>
+        Grupa wykonuje autorski program inspirowany historią jazzu zaczynając od Louisa Armstronga przez Bebop, muzykę Milesa Davisa, Johna Coltrane'a po jazz współczesny. Brzmienie zespołu charakteryzuje się energetycznością i nastrojowością. Własne kompozycje i aranżacje standardów jazzowych są podstawą repertuaru wykonywanego przez kwartet.
+        </p>
+    </div>
+    <div class="col-md-6 col-lg-4">
+        {{ carousel.carousel("quartet-gallery", 3500, [
+                { "caption": "Marcin Janek", "image": "images/quartet-sax.jpg" },
+                { "caption": "Michał Bąk", "image": "images/quartet-bass.jpg" },
+                { "caption": "Arkadiusz Krawiel", "image": "images/quartet-piano.jpg" },
+                { "caption": "Jacek Prościński", "image": "images/quartet-drums.jpg" }
+            ]) 
+        }}
+    </div>
+</div>
+</section>

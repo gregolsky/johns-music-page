@@ -1,0 +1,14 @@
+$grayish: #000;
+
+$gray-darker:            lighten($grayish, 13.5%); // #222
+$gray-dark:              lighten($grayish, 20%);   // #333
+$gray:                   lighten($grayish, 33.5%); // #555
+$gray-light:             lighten($grayish, 60%);   // #999
+$gray-lighter:           lighten($grayish, 85%); // #eee
+$white: #fff;
+
+$brand-primary:         #E7602D;
+$brand-success:         #35BD3A;
+$brand-info:            #075DAB;
+$brand-warning:         #FC940F;
+$brand-danger:          #C9282C;

@@ -1,0 +1,36 @@
+<div id="start" >
+    {% include './home/home.nunjucks' %}
+</div>
+
+<div class="bg-even" >
+{% include './home/details.nunjucks' %}
+</div>
+
+<div class="bg-odd" >
+    {% include './services/concert/view.nunjucks' %}
+</div>
+<div class="bg-even" >
+    {% include './services/business/view.nunjucks' %}
+</div>
+<div class="bg-odd" >
+    {% include './services/event/view.nunjucks' %}
+</div>
+<div class="bg-even" >
+    {% include './media/view.nunjucks' %}
+</div>
+<div class="bg-odd" >
+    {% include './education/workshops/view.nunjucks' %}
+</div>
+<div class="bg-even" >
+    {% include './education/classes/view.nunjucks' %}
+</div>
+<div class="bg-odd" >
+    {% include './about/view.nunjucks' %}
+</div>
+<div class="bg-even" >
+    {% include './contact/view.nunjucks' %}
+</div>
+
+<div class="page-footer" >
+    {% include './footer.nunjucks' %}
+</div>

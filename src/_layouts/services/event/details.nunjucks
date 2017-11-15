@@ -1,0 +1,38 @@
+<div class="container-fluid details">
+  <div class="row">
+    <div class="col-md-12 center-block text-center">
+      <h2>
+        <i class="glyphicon glyphicon-glass"></i>
+        Imprezy okolicznościowe
+        <br/>
+        <small>Oprawa ślubów, wesel i urodzin</small>
+      </h2>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-offset-2 col-lg-8 col-md-12">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <p class="text-justify">
+          Śluby, wesel czy rocznice to&nbsp;<em>momenty wyjątkowe</em>. John’s Music wie, że&nbsp;<em>dobra muzyka</em>&nbsp;wspaniale puentuje najważniejsze momenty życia. Dlatego oferujemy&nbsp;<em>kompleksową oprawę muzyczną wraz z konferansjerką</em>&nbsp;do uroczystości weselnych, urodzin, rocznic i innych momentów istotnych dla Twojej rodziny i przyjaciół. Ciepły soul i jazz podkreśli intymny charakter uroczystości, a&nbsp;<em>ulubione piosenki</em>&nbsp;pary młodej czy jubilata zachęcą zgromadzonych gości do zabawy.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <img class="img-thumbnail img-responsive rot-r pic" src="images/event1.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-sm-push-6">
+          <p class="text-justify">
+          Możesz sam&nbsp;<em>wybrać skład instrumentalny</em>&nbsp;Twojego zespołu na wesele (wokal, klawisze, gitara, saksofon, bas, perkusja). Zapoznaj się z nagraniami naszego cover bandu <a href="#magicsound" du-smooth-scroll du-offset="110" >Magic Sound</a>.
+          </p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+          <img class="img-thumbnail img-responsive rot-l pic" src="images/event2.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

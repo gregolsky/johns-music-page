@@ -1,0 +1,57 @@
+{# Custom Configuration #}
+{% block config %}
+  {# Setup site's base URL to match the "baseUrl" key within `package.json` #}
+  {# Otherwise default to relative pathing #}
+  {% set baseUrl = config.baseUrl or './' %}
+{% endblock %}
+
+<!doctype html>
+<html class="no-js" lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>John's Music - agencja artystyczno-edukacyjna</title>
+    <meta name="description" content="Agencja artystyczna stworzona z myślą o świadczeniu najwyższej jakości usług muzycznych. Zajmujemy się oprawą muzyczną wydarzeń i edukacją artystyczną.">
+    <meta name="author" content="Grzegorz Lachowski" >
+    <meta name="keywords" content="John's,Music,muzyka,agencja,artystyczna,edukacja,event,gdańsk,trójmiasto,rytmika,emisja,głos,lekcje,instrument,granie,oprawa,wesele,marcin janek,joanna lachowska" >
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="{{baseUrl}}styles/main.css">
+
+    {% block stylesheets %}
+    {% endblock %}
+  </head>
+  <body data-spy="scroll" data-target="#menu" >
+
+    {% include "./nav.nunjucks" %}
+
+<div class="magic">
+
+</div>
+    <div role="main" class="content" >
+    <!--[if lt IE 11]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+    <![endif]-->
+
+      {% block content %}{% endblock %}
+    </div>
+
+    <div class="debug" style="background-color: #fff; color: #333; border-color: #ccc; position: fixed; bottom: 0; left: 0">
+
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <script src="{{baseUrl}}scripts/main.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

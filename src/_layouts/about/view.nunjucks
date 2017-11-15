@@ -1,0 +1,23 @@
+{% import "_layouts/macros/section.nunjucks" as section %}
+
+<div class="page-section marketing hidden-xs about-bg">
+    &nbsp;
+</div>
+
+<article id="about" class="page-section">
+    <div class="container-fluid details">
+        <div class="row">
+            <div class="col-md-12 center-block text-center">
+                {{ section.header("O nas", "W pracy i prywatnie", "star") }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-offset-2 col-lg-3 col-sm-6">
+                {% include './marcin.nunjucks' %}
+            </div>
+            <div class="col-lg-offset-2 col-lg-3 col-sm-6">
+                {% include './asia.nunjucks' %}
+            </div>
+        </div>
+    </div>
+</article>
